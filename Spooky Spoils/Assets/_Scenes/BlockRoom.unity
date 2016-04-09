@@ -158,6 +158,11 @@ Prefab:
       propertyPath: m_Name
       value: GhostlyCrate (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -790,6 +795,11 @@ Prefab:
       propertyPath: m_Name
       value: GhostlyCrate (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1236,6 +1246,11 @@ Prefab:
       propertyPath: m_Name
       value: GhostlyCrate (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1458,6 +1473,11 @@ Prefab:
       propertyPath: m_Name
       value: GhostlyCrate (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1548,6 +1568,11 @@ Prefab:
       propertyPath: m_Name
       value: GhostlyCrate (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1790,6 +1815,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
