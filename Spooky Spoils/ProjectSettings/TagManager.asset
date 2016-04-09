@@ -6,6 +6,7 @@ TagManager:
   tags:
   - PirateVisible
   - GhostPirate
+  - GhostStatue
   layers:
   - Default
   - TransparentFX
