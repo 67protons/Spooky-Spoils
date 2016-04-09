@@ -1,22 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : MonoBehaviour {
+public class Player : HiddenInFog {
     public float moveSpeed = 3f;
     private Animator anim;
     private bool movingLeft, movingRight;
     private bool movingUp, movingDown;
 
-    private GazeAwareComponent _gazeAware;
-
-    void Start()
+    public override void Start()
     {
-        anim = this.GetComponent<Animator>();
-        _gazeAware = this.GetComponent<GazeAwareComponent>();
+        base.Start();
+        anim = this.GetComponent<Animator>();        
     }
 
-	void Update () {
-        ManageState();
+	public override void Update () {
+        base.Update();
+        //ManageState();
         //Horizontal Movement
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -94,18 +93,5 @@ public class Player : MonoBehaviour {
         {
             this.transform.Translate(new Vector2(0f, -moveSpeed * Time.deltaTime));
         }
-    }
-
-    void ManageState()
-    {
-        if (_gazeAware.HasGaze)
-        {
-            //Debug.Log("Senpai noticed me");
-            this.GetComponent<SpriteRenderer>().enabled = true;
-        }
-        else
-        {
-            this.GetComponent<SpriteRenderer>().enabled = false;
-        }
-    }
+    }    
 }
