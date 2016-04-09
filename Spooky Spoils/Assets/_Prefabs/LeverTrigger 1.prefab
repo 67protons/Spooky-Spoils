@@ -13,7 +13,7 @@ GameObject:
   - 212: {fileID: 21214644}
   - 114: {fileID: 11441500}
   m_Layer: 0
-  m_Name: LeverTrigger 1
+  m_Name: LeverTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
