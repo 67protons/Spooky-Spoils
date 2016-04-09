@@ -21,7 +21,7 @@ public class BlockPuzzleManager : MonoBehaviour {
         EyeXEyePosition eyePosition = _eyePositionDataComponent.LastEyePosition;
         if (eyePosition != null)
         {
-            Debug.Log(eyePosition.LeftEye.IsValid ^ eyePosition.RightEye.IsValid);
+            //Debug.Log(eyePosition.LeftEye.IsValid ^ eyePosition.RightEye.IsValid);
             if (eyePosition.LeftEye.IsValid ^ eyePosition.RightEye.IsValid)
             {
                 //Reveal every object in our list

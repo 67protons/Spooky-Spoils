@@ -7,12 +7,16 @@ public class Player : MonoBehaviour {
     private bool movingLeft, movingRight;
     private bool movingUp, movingDown;
 
+    private GazeAwareComponent _gazeAware;
+
     void Start()
     {
         anim = this.GetComponent<Animator>();
+        _gazeAware = this.GetComponent<GazeAwareComponent>();
     }
 
 	void Update () {
+        ManageState();
         //Horizontal Movement
         if (Input.GetKeyDown(KeyCode.A))
         {
@@ -89,6 +93,19 @@ public class Player : MonoBehaviour {
         else if (movingDown)
         {
             this.transform.Translate(new Vector2(0f, -moveSpeed * Time.deltaTime));
+        }
+    }
+
+    void ManageState()
+    {
+        if (_gazeAware.HasGaze)
+        {
+            //Debug.Log("Senpai noticed me");
+            this.GetComponent<SpriteRenderer>().enabled = true;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().enabled = false;
         }
     }
 }

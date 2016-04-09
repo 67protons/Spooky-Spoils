@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="14" height="14" tilewidth="32" tileheight="32" nextobjectid="1">
+ <tileset firstgid="1" name="PirateCrate" tilewidth="32" tileheight="32" tilecount="1">
+  <image source="../../_Art/Images/Props/crate.png" width="32" height="32"/>
+  <tile id="0">
+   <objectgroup draworder="index">
+    <object id="0" x="0" y="0" width="32" height="32"/>
+   </objectgroup>
+  </tile>
+ </tileset>
+ <layer name="StaticCrates" width="14" height="14">
+  <data encoding="base64" compression="zlib">
+   eJylUkEKADAIqv9/elcJzVpCl2krw4yIPBaCvVUONVm4qkONQten9nXznM+JP3ezn9syv2wH5YtpJr66v10GpplQ3BaXLD+/kAB0
+  </data>
+ </layer>
+</map>
