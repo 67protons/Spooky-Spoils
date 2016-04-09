@@ -42,7 +42,7 @@ public class GhostStatue : MonoBehaviour {
         {
             isChasing = true;
             anim.SetBool("isAttacking", true);
-            anim.Play("PlebStatueAttack");
+            anim.Play("StatueAttack");
         }
     }
 }
