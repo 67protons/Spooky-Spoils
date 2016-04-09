@@ -6,10 +6,13 @@ public class GhostStatue : MonoBehaviour {
     public float speed = 1f;
     public bool isChasing = false;
     public bool activated = false;
-
+    public bool hasGaze
+    {
+        get { return _gazeAware.HasGaze; }
+    }
     private GameObject player;
     private GazeAwareComponent _gazeAware;
-    private Animator anim;
+    public Animator anim;
 
     void Awake()
     {
@@ -33,16 +36,14 @@ public class GhostStatue : MonoBehaviour {
 
     void checkState()
     {
-        if (_gazeAware.HasGaze)
+        if (isChasing)
         {
-            isChasing = false;
-            anim.SetBool("isAttacking", false);
+            anim.SetBool("isAttacking", true);
+            anim.Play("StatueAttack");
         }
         else
         {
-            isChasing = true;
-            anim.SetBool("isAttacking", true);
-            anim.Play("StatueAttack");
+            anim.SetBool("isAttacking", false);
         }
     }
 }
