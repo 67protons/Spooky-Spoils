@@ -6,6 +6,7 @@ public class BlockPuzzleManager : MonoBehaviour {
     private EyePositionDataComponent _eyePositionDataComponent;
     private GameObject[] pirateVisibles;
     private GameObject[] ghostPirates;
+    private GameObject[] fakeCrates;
     private float _activatedRenderTime = 0f;
     private float _deactivatedRenderTime = 0f;
 
@@ -14,6 +15,7 @@ public class BlockPuzzleManager : MonoBehaviour {
         _eyePositionDataComponent = this.GetComponent<EyePositionDataComponent>();
         pirateVisibles = GameObject.FindGameObjectsWithTag("PirateVisible");
         ghostPirates = GameObject.FindGameObjectsWithTag("GhostPirate");
+        fakeCrates = GameObject.FindGameObjectsWithTag("FakeCrate");
     }
 
     void Update()
@@ -31,6 +33,7 @@ public class BlockPuzzleManager : MonoBehaviour {
                 {
                     TogglePirateVisibleRenderer(true);
                     ToggleGhostPirates(true);
+                    ToggleFakeCrates(true);
                 }                    
             }
             else
@@ -42,6 +45,7 @@ public class BlockPuzzleManager : MonoBehaviour {
                 {
                     TogglePirateVisibleRenderer(false);
                     ToggleGhostPirates(false);
+                    ToggleFakeCrates(false);
                 }                    
             }
         }
@@ -60,6 +64,15 @@ public class BlockPuzzleManager : MonoBehaviour {
         {
             ghost.GetComponent<SpriteRenderer>().enabled = enabled;
             ghost.GetComponent<GhostPirate>().isChasing = enabled;
+        }
+    }
+
+    private void ToggleFakeCrates(bool enabled)
+    {
+        foreach (GameObject crate in fakeCrates)
+        {
+            if (crate != null)
+                crate.GetComponent<FakeCrate>().playerIsPirate = enabled;
         }
     }
 }
