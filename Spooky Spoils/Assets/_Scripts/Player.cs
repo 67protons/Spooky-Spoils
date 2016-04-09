@@ -3,49 +3,72 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
     public float moveSpeed = 3f;
+    private Animator anim;
     private bool movingLeft, movingRight;
     private bool movingUp, movingDown;
+
+    void Start()
+    {
+        anim = this.GetComponent<Animator>();
+    }
 
 	void Update () {
         //Horizontal Movement
         if (Input.GetKeyDown(KeyCode.A))
         {
+            anim.SetBool("isWalking", true);
+            anim.Play("PlayerWalkLeft");
             movingLeft = true;
             movingRight = false;
         }
-        else if (Input.GetKeyUp(KeyCode.A))
+        if (Input.GetKeyUp(KeyCode.A))
         {
+            //anim.SetBool("isWalking", false);
             movingLeft = false;
         }
         if (Input.GetKeyDown(KeyCode.D))
-        {            
+        {
+            anim.SetBool("isWalking", true);
+            anim.Play("PlayerWalkRight");
             movingRight = true;
             movingLeft = false;
         }
-        else if (Input.GetKeyUp(KeyCode.D))
+      
+        if (Input.GetKeyUp(KeyCode.D))
         {
+            //anim.SetBool("isWalking", false);
             movingRight = false;
         }
 
         //Vertical Movement
         if (Input.GetKeyDown(KeyCode.W))
         {
+            anim.SetBool("isWalking", true);
+            anim.Play("PlayerWalkUp");
             movingUp = true;
             movingDown = false;
         }
-        else if (Input.GetKeyUp(KeyCode.W))
+        if (Input.GetKeyUp(KeyCode.W))
         {
+            //anim.SetBool("isWalking", false);
             movingUp = false;
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
+            anim.SetBool("isWalking", true);
+            anim.Play("PlayerWalkDown");
             movingDown = true;
             movingUp = false;
         }
-        else if (Input.GetKeyUp(KeyCode.S))
+        if (Input.GetKeyUp(KeyCode.S))
         {
+            //anim.SetBool("isWalking", false);
             movingDown = false;
         }
+
+        //if (!(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.W)))
+        if(!(movingLeft || movingRight || movingUp || movingDown))
+            anim.SetBool("isWalking", false);
 
 	}
 
