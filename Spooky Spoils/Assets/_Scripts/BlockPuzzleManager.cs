@@ -5,6 +5,7 @@ public class BlockPuzzleManager : MonoBehaviour {
     public float thresholdMs = 100f;
     private EyePositionDataComponent _eyePositionDataComponent;
     private GameObject[] pirateVisibles;
+    private GameObject[] ghostPirates;
     private float _activatedRenderTime = 0f;
     private float _deactivatedRenderTime = 0f;
 
@@ -12,6 +13,7 @@ public class BlockPuzzleManager : MonoBehaviour {
     {
         _eyePositionDataComponent = this.GetComponent<EyePositionDataComponent>();
         pirateVisibles = GameObject.FindGameObjectsWithTag("PirateVisible");
+        ghostPirates = GameObject.FindGameObjectsWithTag("GhostPirate");
     }
 
     void Update()
@@ -26,7 +28,10 @@ public class BlockPuzzleManager : MonoBehaviour {
                 _deactivatedRenderTime = 0f;
                 _activatedRenderTime += Time.deltaTime;
                 if (_activatedRenderTime >= (thresholdMs / 1000f))
+                {
                     TogglePirateVisibleRenderer(true);
+                    ToggleGhostPirates(true);
+                }                    
             }
             else
             {
@@ -34,7 +39,10 @@ public class BlockPuzzleManager : MonoBehaviour {
                 _activatedRenderTime = 0f;
                 _deactivatedRenderTime += Time.deltaTime;
                 if (_deactivatedRenderTime >= (thresholdMs / 1000f))
-                    TogglePirateVisibleRenderer(false);         
+                {
+                    TogglePirateVisibleRenderer(false);
+                    ToggleGhostPirates(false);
+                }                    
             }
         }
     }
@@ -43,6 +51,15 @@ public class BlockPuzzleManager : MonoBehaviour {
         foreach (GameObject invisibleObject in pirateVisibles)
         {
             invisibleObject.GetComponent<SpriteRenderer>().enabled = enabled;
+        }
+    }
+
+    private void ToggleGhostPirates(bool enabled)
+    {
+        foreach (GameObject ghost in ghostPirates)
+        {
+            ghost.GetComponent<SpriteRenderer>().enabled = enabled;
+            ghost.GetComponent<GhostPirate>().isChasing = enabled;
         }
     }
 }
