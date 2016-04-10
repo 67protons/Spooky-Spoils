@@ -1,67 +1,99 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &134034
+--- !u!1 &137508
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 498338}
-  - 212: {fileID: 21273682}
-  - 61: {fileID: 6156054}
-  - 114: {fileID: 11461994}
+  - 4: {fileID: 455126}
+  - 212: {fileID: 21294920}
+  - 60: {fileID: 6069412}
+  - 114: {fileID: 11493424}
   m_Layer: 0
-  m_Name: FakeCrate
-  m_TagString: FakeCrate
+  m_Name: Lord BlackBourne - Neutral
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &498338
+--- !u!4 &455126
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134034}
+  m_GameObject: {fileID: 137508}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.07, y: 0.739, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!61 &6156054
-BoxCollider2D:
+--- !u!60 &6069412
+PolygonCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134034}
+  m_GameObject: {fileID: 137508}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1.4222223, y: 1.4222223}
---- !u!114 &11461994
+  m_Points:
+    m_Paths:
+    - - {x: 0.35, y: -1.5899999}
+      - {x: 0.47, y: -1.62}
+      - {x: 1.01, y: -1.62}
+      - {x: 1.14, y: -0.64}
+      - {x: 1.14, y: 0}
+      - {x: 1.12, y: 0.02}
+      - {x: 0.97999996, y: 0.02}
+      - {x: 1.14, y: 0.79999995}
+      - {x: 1.14, y: 1.2099999}
+      - {x: 0.83, y: 1.52}
+      - {x: 0.42, y: 1.55}
+      - {x: 0.26999998, y: 1.78}
+      - {x: -0.16, y: 1.78}
+      - {x: -0.53, y: 1.49}
+      - {x: -0.84999996, y: 1.4599999}
+      - {x: -1.14, y: 1.12}
+      - {x: -1.14, y: 0.79999995}
+      - {x: -1.12, y: 0.78}
+      - {x: -0.97999996, y: 0.78}
+      - {x: -1.14, y: 0}
+      - {x: -1.14, y: -0.64}
+      - {x: -1.12, y: -0.65999997}
+      - {x: -0.97999996, y: -0.65999997}
+      - {x: -1, y: -1.61}
+      - {x: -0.96, y: -1.62}
+      - {x: -0.45999998, y: -1.62}
+      - {x: -0.24, y: -1.53}
+      - {x: -0.22999999, y: -1.62}
+      - {x: 0.22, y: -1.62}
+--- !u!114 &11493424
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134034}
+  m_GameObject: {fileID: 137508}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 04cbb6672caf00144b2aa66c11d69263, type: 3}
+  m_Script: {fileID: 11500000, guid: 39ac103d1b8d11a4a9dff3714befb6c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIsPirate: 0
---- !u!212 &21273682
+  angry: {fileID: 21300000, guid: 88a4b00322b317845aebf3713d0ce64b, type: 3}
+  phase: 1
+  projectile: {fileID: 128068, guid: a0d6ef9374f30084eb5c4a0547179cde, type: 2}
+  shotFrequency: 1
+--- !u!212 &21294920
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 134034}
+  m_GameObject: {fileID: 137508}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -80,9 +112,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -634380801
+  m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9c5e809cc4e1f8e478c28a7525fe7c70, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d9486afdc397eef47b138090107ea975, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -95,5 +127,5 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 134034}
+  m_RootGameObject: {fileID: 137508}
   m_IsPrefabParent: 1

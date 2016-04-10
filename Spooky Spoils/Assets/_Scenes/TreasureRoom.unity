@@ -98,6 +98,7 @@ GameObject:
   - 114: {fileID: 108993375}
   - 114: {fileID: 108993379}
   - 114: {fileID: 108993380}
+  - 114: {fileID: 108993381}
   m_Layer: 0
   m_Name: chest1_0
   m_TagString: Untagged
@@ -199,6 +200,20 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &108993381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108993374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene1: 
+  Scene2: MainMenu
+  key: {fileID: 0}
 --- !u!1 &221409075
 GameObject:
   m_ObjectHideFlags: 0
@@ -354,7 +369,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 927670855}
   - 61: {fileID: 927670854}
-  - 114: {fileID: 927670856}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -388,20 +402,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &927670856
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 927670853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Scene1: 
-  Scene2: MainMenu
-  key: {fileID: 0}
 --- !u!1001 &1773798301
 Prefab:
   m_ObjectHideFlags: 0

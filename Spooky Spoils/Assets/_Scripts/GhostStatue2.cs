@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GhostStatue2 : MonoBehaviour {
+public class GhostStatue2 : Enemy {
 
     public float speed = 1f;
     public bool isChasing = false;

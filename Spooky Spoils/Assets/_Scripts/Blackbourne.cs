@@ -2,18 +2,19 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class Blackbourne : Enemy {   
+public class Blackbourne : Enemy {
+    public Sprite angry;
     public int phase = 1;
     public GameObject projectile;
     public float shotFrequency;
     private float cooldownCounter;
     private GameObject _playerObject;
-    private List<GameObject> _projectileList = new List<GameObject>();
+    private List<GameObject> _projectileList = new List<GameObject>();    
 
     void Awake()
     {
         _playerObject = GameObject.FindGameObjectWithTag("Player");
-        cooldownCounter = shotFrequency;
+        cooldownCounter = shotFrequency;        
     }
 
     void Update()
@@ -43,7 +44,7 @@ public class Blackbourne : Enemy {
 
     void ChasePlayer()
     {
-        this.transform.position = Vector3.MoveTowards(this.transform.position, _playerObject.transform.position, 3 * Time.deltaTime);
+        this.transform.position = Vector3.MoveTowards(this.transform.position, _playerObject.transform.position, 1 * Time.deltaTime);
     }
 
     public override void Stop()
@@ -57,7 +58,9 @@ public class Blackbourne : Enemy {
                     Destroy(projectile);
                 }
             }
-            this.phase = 2;
+            this.GetComponent<SpriteRenderer>().sprite = angry;
+            phase = 2;
+            this.GetComponent<Collider2D>().isTrigger = true;
         }
     }
 }

@@ -95,7 +95,7 @@ GameObject:
   - 4: {fileID: 473036701}
   - 212: {fileID: 473036700}
   - 61: {fileID: 473036699}
-  - 114: {fileID: 473036702}
+  - 114: {fileID: 473036703}
   m_Layer: 0
   m_Name: Wheatly_Senpai
   m_TagString: FakeCrate
@@ -159,7 +159,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
---- !u!114 &473036702
+--- !u!114 &473036703
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -167,12 +167,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 473036698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
+  m_Script: {fileID: 11500000, guid: 04cbb6672caf00144b2aa66c11d69263, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene1: 
-  Scene2: TreasureRoom
-  key: {fileID: 990776921}
+  playerIsPirate: 0
 --- !u!1 &783965432
 GameObject:
   m_ObjectHideFlags: 0
@@ -378,6 +376,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 916393329}
   - 114: {fileID: 916393328}
+  - 114: {fileID: 916393330}
   m_Layer: 0
   m_Name: EyeDetect
   m_TagString: Untagged
@@ -411,6 +410,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!114 &916393330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 916393327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54ed5578a30af54da1741d9db2d4193, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fixationDataMode: 0
 --- !u!1 &990776919
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,10 +430,10 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 990776922}
-  - 114: {fileID: 990776921}
   - 61: {fileID: 990776920}
+  - 114: {fileID: 990776924}
   m_Layer: 0
-  m_Name: Key
+  m_Name: TreasureRoom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -442,18 +453,6 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
---- !u!114 &990776921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 990776919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ee6f99c20b789b4468c50cd46c048cef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hasKey: 0
 --- !u!4 &990776922
 Transform:
   m_ObjectHideFlags: 0
@@ -466,6 +465,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &990776924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 990776919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene1: 
+  Scene2: TreasureRoom
+  key: {fileID: 0}
 --- !u!1 &1072277123
 GameObject:
   m_ObjectHideFlags: 0
