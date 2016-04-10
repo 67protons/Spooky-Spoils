@@ -9,11 +9,16 @@ public class LeverTrigger : HiddenInFog {
     void Start()
     {
         base.Start();
+        this.GetComponent<Collider2D>().enabled = false;
     }
 
     void Update()
     {
         base.Update();
+        if (HasGaze)
+        {
+            this.GetComponent<Collider2D>().enabled = true;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
