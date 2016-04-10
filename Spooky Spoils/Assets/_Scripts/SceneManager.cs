@@ -51,7 +51,7 @@ public class SceneManager : MonoBehaviour {
             {
                 if (_playerHasKey)
                     Application.LoadLevel(Scene2);
-                else
+                else if (Scene1 != "")
                     Application.LoadLevel(Scene1);
             }
         }

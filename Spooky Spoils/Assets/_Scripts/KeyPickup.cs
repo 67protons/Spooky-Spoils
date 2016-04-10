@@ -2,14 +2,13 @@
 using System.Collections;
 
 public class KeyPickup : MonoBehaviour {
-    public bool hasKey = false;
-    // Use this for initialization
-	void Awake () {
+    public bool hasKey = false;    
+	public virtual void Awake () {
         this.GetComponent<Collider2D>().enabled = false;
 	}
-	
-	// Update is called once per frame
-	void Update () {
+		
+    public virtual void Update()
+    {
         if (this.GetComponent<GazeAwareComponent>().HasGaze)
         {
             this.GetComponent<Collider2D>().enabled = true;
