@@ -35,9 +35,9 @@ public class MenuCursor : MonoBehaviour {
             this.transform.position = exitOffset;
         }
 
-        if(Input.GetKeyDown(KeyCode.Space) && transform.position == playOffset)
+        if(Input.GetKeyDown(KeyCode.Return) && transform.position == playOffset)
             Application.LoadLevel("Foyer1");
-        if (Input.GetKeyDown(KeyCode.Space) && transform.position == exitOffset)
+        if (Input.GetKeyDown(KeyCode.Return) && transform.position == exitOffset)
             Application.Quit();
 	}
 }

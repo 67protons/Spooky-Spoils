@@ -139,7 +139,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 19b60226b5a3eaa449110792cc5488c4, type: 3}
+  m_Sprite: {fileID: 21300000, guid: dea7668d048707946a2cfcff6d8403cf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -161,7 +161,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 228983296}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1dbf12af3932214281cc3a9631ff1c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 34f56872240acc444be4400cacc7203d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PlayButton: {fileID: 1803545424}
@@ -550,7 +550,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 58f4dad9c402bab40ac9e8517f1c692c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f49dfe789c067144bbe6c07fb9ac8eb4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

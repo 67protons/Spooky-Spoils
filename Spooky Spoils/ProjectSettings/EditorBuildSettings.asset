@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/Hallway2.unity
   - enabled: 1
     path: Assets/_Scenes/TreasureRoom.unity
+  - enabled: 1
+    path: Assets/_Scenes/MainMenu.unity
