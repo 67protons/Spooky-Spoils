@@ -1,5 +1,3 @@
 
 HINT:
-Run…
-|
-Find the treasure.
+Run...Find the treasure.

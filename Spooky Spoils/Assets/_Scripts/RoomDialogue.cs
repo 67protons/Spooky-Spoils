@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class RoomDialogue : MonoBehaviour {
-    public string roomBegin = "";
-    public string roomEnd = "";
+    public string roomBegin = "";    
     public string roomHint = "";
     private DialogueManager _dialogueManager;    
 
