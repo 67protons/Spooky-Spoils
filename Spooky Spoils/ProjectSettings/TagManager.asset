@@ -8,6 +8,7 @@ TagManager:
   - GhostPirate
   - GhostStatue
   - FakeCrate
+  - Barrel
   layers:
   - Default
   - TransparentFX

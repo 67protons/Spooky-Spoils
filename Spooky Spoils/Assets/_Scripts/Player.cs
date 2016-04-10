@@ -1,20 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Player : HiddenInFog {
+public class Player : MonoBehaviour {
     public float moveSpeed = 3f;
     private Animator anim;
     private bool movingLeft, movingRight;
     private bool movingUp, movingDown;
 
-    public override void Start()
+    /*public override */void Start()
     {
-        base.Start();
+        //base.Start();
         anim = this.GetComponent<Animator>();        
     }
 
-	public override void Update () {
-        base.Update();
+	/*public override */void Update () {
+        //base.Update();
         //ManageState();
         //Horizontal Movement
         if (Input.GetKeyDown(KeyCode.A))

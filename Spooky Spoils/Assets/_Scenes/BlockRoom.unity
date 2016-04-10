@@ -113,8 +113,8 @@ Transform:
   - {fileID: 1242151120}
   - {fileID: 1198498558}
   - {fileID: 525205767}
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_Father: {fileID: 760391109}
+  m_RootOrder: 2
 --- !u!1001 &74523081
 Prefab:
   m_ObjectHideFlags: 0
@@ -163,6 +163,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
         type: 3}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -220,11 +224,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 303411444}
   m_LocalRotation: {x: -0.000000115202326, y: 0.7071067, z: -0.7071068, w: -0.00000011520231}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_Father: {fileID: 760391109}
+  m_RootOrder: 4
 --- !u!33 &303411447
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -263,8 +267,8 @@ Transform:
   - {fileID: 1364937029}
   - {fileID: 1879605045}
   - {fileID: 1522289699}
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_Father: {fileID: 760391109}
+  m_RootOrder: 1
 --- !u!1001 &419323490
 Prefab:
   m_ObjectHideFlags: 0
@@ -311,6 +315,10 @@ Prefab:
     - target: {fileID: 134034, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
       propertyPath: m_TagString
       value: FakeCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
@@ -394,7 +402,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 3
 --- !u!1001 &514748844
 Prefab:
   m_ObjectHideFlags: 0
@@ -442,6 +450,10 @@ Prefab:
       propertyPath: m_TagString
       value: FakeCrate
       objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
   m_IsPrefabParent: 0
@@ -462,7 +474,7 @@ GameObject:
   - 50: {fileID: 525205768}
   m_Layer: 0
   m_Name: Barrel (2)
-  m_TagString: Untagged
+  m_TagString: Barrel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -534,7 +546,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -634380801
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5e9e671bff2c6a543a0a29c08d44efec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -586,6 +598,10 @@ Prefab:
     - target: {fileID: 134034, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
       propertyPath: m_TagString
       value: FakeCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
@@ -671,7 +687,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
 --- !u!114 &632254656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,9 +741,14 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1368281886}
+  - {fileID: 323246334}
+  - {fileID: 741497}
+  - {fileID: 1772518542}
+  - {fileID: 303411446}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
 --- !u!114 &760391110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -752,6 +773,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thresholdMs: 100
+  leftEyeSpot: {fileID: 2800000, guid: f085df8e4ae53f54791e4ba107533057, type: 3}
+  rightEyeSpot: {fileID: 2800000, guid: e26e4a31bbc5ec84d926738a128048f8, type: 3}
 --- !u!1001 &790885837
 Prefab:
   m_ObjectHideFlags: 0
@@ -800,6 +823,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
         type: 3}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -858,6 +885,10 @@ Prefab:
       propertyPath: m_TagString
       value: FakeCrate
       objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
   m_IsPrefabParent: 0
@@ -888,7 +919,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 760391109}
     m_Modifications:
     - target: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
       propertyPath: m_LocalPosition.x
@@ -896,7 +927,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10.1
+      value: 10.099998
       objectReference: {fileID: 0}
     - target: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
       propertyPath: m_LocalPosition.z
@@ -920,6 +951,18 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
+      propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -968,6 +1011,10 @@ Prefab:
       propertyPath: m_Name
       value: FakeCrate2 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
   m_IsPrefabParent: 0
@@ -1014,6 +1061,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
   m_IsPrefabParent: 0
@@ -1030,7 +1081,7 @@ GameObject:
   - 50: {fileID: 1198498555}
   m_Layer: 0
   m_Name: Barrel (1)
-  m_TagString: Untagged
+  m_TagString: Barrel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1090,7 +1141,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -634380801
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5e9e671bff2c6a543a0a29c08d44efec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1121,7 +1172,7 @@ GameObject:
   - 50: {fileID: 1242151122}
   m_Layer: 0
   m_Name: Barrel
-  m_TagString: Untagged
+  m_TagString: Barrel
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1150,7 +1201,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: -634380801
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 5e9e671bff2c6a543a0a29c08d44efec, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1251,6 +1302,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
         type: 3}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1258,6 +1313,10 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 430714, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_PrefabInternal: {fileID: 1364937028}
+--- !u!4 &1368281886 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 471086, guid: f60623fdff020314db0fd1536bf9816a, type: 2}
+  m_PrefabInternal: {fileID: 831240366}
 --- !u!1001 &1459703443
 Prefab:
   m_ObjectHideFlags: 0
@@ -1304,6 +1363,10 @@ Prefab:
     - target: {fileID: 134034, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
       propertyPath: m_TagString
       value: FakeCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
@@ -1373,6 +1436,10 @@ Prefab:
       propertyPath: m_Name
       value: FakeCrate2 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
   m_IsPrefabParent: 0
@@ -1422,6 +1489,10 @@ Prefab:
     - target: {fileID: 134034, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
       propertyPath: m_Name
       value: FakeCrate (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
@@ -1478,6 +1549,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
         type: 3}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1523,8 +1598,8 @@ Transform:
   - {fileID: 1491703877}
   - {fileID: 1966360960}
   - {fileID: 1970676692}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 760391109}
+  m_RootOrder: 3
 --- !u!1001 &1879605044
 Prefab:
   m_ObjectHideFlags: 0
@@ -1573,6 +1648,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
         type: 3}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1626,6 +1705,10 @@ Prefab:
     - target: {fileID: 134034, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
       propertyPath: m_TagString
       value: FakeCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
@@ -1719,6 +1802,10 @@ Prefab:
       propertyPath: m_Name
       value: FakeCrate2 (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
   m_IsPrefabParent: 0
@@ -1768,6 +1855,10 @@ Prefab:
     - target: {fileID: 134034, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
       propertyPath: m_Name
       value: FakeCrate (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea6479ce7e9fc9a4594e2af34a3dc2c1, type: 2}
@@ -1820,6 +1911,10 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: d5e3a524b1f7c5a43a5cdafbb1c8a3bc,
         type: 3}
+    - target: {fileID: 21242176, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
   m_IsPrefabParent: 0
@@ -1865,6 +1960,10 @@ Prefab:
     - target: {fileID: 134034, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
       propertyPath: m_TagString
       value: FakeCrate
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273682, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
+      propertyPath: m_SortingLayerID
+      value: -634380801
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dac44f7cab7a274595a07666b0e7180, type: 2}
