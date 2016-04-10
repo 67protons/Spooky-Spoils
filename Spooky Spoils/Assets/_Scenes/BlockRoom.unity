@@ -99,7 +99,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &741497
 Transform:
   m_ObjectHideFlags: 0
@@ -357,7 +357,7 @@ GameObject:
   - 61: {fileID: 504385602}
   - 114: {fileID: 504385603}
   m_Layer: 0
-  m_Name: SilverKey
+  m_Name: Key
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -430,6 +430,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee6f99c20b789b4468c50cd46c048cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasKey: 0
 --- !u!1001 &514748844
 Prefab:
   m_ObjectHideFlags: 0
@@ -1601,7 +1602,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1772518542
 Transform:
   m_ObjectHideFlags: 0
@@ -1753,11 +1754,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 436052, guid: 71f7526431b107943b7b750586046bed, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 7.87
+      value: -7.81
       objectReference: {fileID: 0}
     - target: {fileID: 436052, guid: 71f7526431b107943b7b750586046bed, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.63
+      value: 5.19
       objectReference: {fileID: 0}
     - target: {fileID: 436052, guid: 71f7526431b107943b7b750586046bed, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1814,8 +1815,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: Foyer
-  requiredKeyNum: 2
+  Scene1: Foyer2
+  Scene2: Foyer3
+  key: {fileID: 504385603}
 --- !u!61 &1934562130
 BoxCollider2D:
   m_ObjectHideFlags: 0
