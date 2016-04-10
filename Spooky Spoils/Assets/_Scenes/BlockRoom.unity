@@ -1815,6 +1815,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Scene: Foyer
+  requiredKeyNum: 2
 --- !u!61 &1934562130
 BoxCollider2D:
   m_ObjectHideFlags: 0

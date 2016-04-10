@@ -2,13 +2,29 @@
 using System.Collections;
 
 public class SceneManager : MonoBehaviour {
-    public string Scene;
+    public string Scene1, Scene2;
+    public KeyPickup key;
 
-    void OnTriggerEnter2D(Collider2D other)
+    void Awake()
+    {
+        GameObject keyObject = GameObject.Find("Key");
+        if (keyObject != null)
+            key = keyObject.GetComponent<KeyPickup>();
+    }
+
+    void OnTriggerEnter2D(Collider2D other) 
     {
         if (other.CompareTag("Player"))
         {
-            Application.LoadLevel(Scene);
+            if (key == null)
+                Application.LoadLevel(Scene2);
+            else
+            {
+                if (key.hasKey)
+                    Application.LoadLevel(Scene2);
+                else if (Scene1 != "")
+                    Application.LoadLevel(Scene1);
+            }
         }
     }
 
@@ -16,7 +32,15 @@ public class SceneManager : MonoBehaviour {
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Application.LoadLevel(Scene);
+            if (key == null)
+                Application.LoadLevel(Scene2);
+            else
+            {
+                if (key.hasKey)
+                    Application.LoadLevel(Scene2);
+                else
+                    Application.LoadLevel(Scene1);
+            }
         }
     }
 }
