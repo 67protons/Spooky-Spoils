@@ -1331,6 +1331,7 @@ GameObject:
   - 61: {fileID: 1242151121}
   - 50: {fileID: 1242151122}
   - 82: {fileID: 1242151123}
+  - 114: {fileID: 1242151124}
   m_Layer: 0
   m_Name: Barrel
   m_TagString: Barrel
@@ -1485,6 +1486,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1242151124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1242151118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47a7d33e20fcf6941aa01919f317b91e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPushing: 0
 --- !u!4 &1327010160 stripped
 Transform:
   m_PrefabParentObject: {fileID: 430714, guid: dc5aad69a3f8e614db760f9de13a8d07, type: 2}
