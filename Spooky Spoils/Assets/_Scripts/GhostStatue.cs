@@ -50,6 +50,5 @@ public class GhostStatue : Enemy {
     public override void Stop()
     {
         this.activated = false;
-        anim.Play("Entry");
     }
 }
