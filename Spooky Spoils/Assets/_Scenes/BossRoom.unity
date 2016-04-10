@@ -1172,6 +1172,8 @@ GameObject:
   - 212: {fileID: 861865527}
   - 114: {fileID: 861865526}
   - 114: {fileID: 861865525}
+  - 114: {fileID: 861865528}
+  - 61: {fileID: 861865529}
   m_Layer: 0
   m_Name: KeyShard3
   m_TagString: Untagged
@@ -1246,6 +1248,32 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &861865528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 861865523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ae0c4b32f6c394e9db23789498a3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correspondingKey: {fileID: 1814730681}
+--- !u!61 &861865529
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 861865523}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.31, y: 1.595}
 --- !u!1 &942233556
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,6 +2000,8 @@ GameObject:
   - 212: {fileID: 1481180195}
   - 114: {fileID: 1481180194}
   - 114: {fileID: 1481180193}
+  - 114: {fileID: 1481180196}
+  - 61: {fileID: 1481180197}
   m_Layer: 0
   m_Name: KeyShard2
   m_TagString: Untagged
@@ -2046,6 +2076,32 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1481180196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481180191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ae0c4b32f6c394e9db23789498a3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correspondingKey: {fileID: 861865523}
+--- !u!61 &1481180197
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481180191}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.31, y: 1.595}
 --- !u!1 &1585076169
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,6 +2255,8 @@ GameObject:
   - 212: {fileID: 1726353892}
   - 114: {fileID: 1726353891}
   - 114: {fileID: 1726353890}
+  - 114: {fileID: 1726353893}
+  - 61: {fileID: 1726353894}
   m_Layer: 0
   m_Name: KeyShard1
   m_TagString: Untagged
@@ -2273,6 +2331,32 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1726353893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726353888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ae0c4b32f6c394e9db23789498a3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correspondingKey: {fileID: 1481180191}
+--- !u!61 &1726353894
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726353888}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.31, y: 1.595}
 --- !u!1 &1734140466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,6 +2468,8 @@ GameObject:
   - 212: {fileID: 1814730685}
   - 114: {fileID: 1814730684}
   - 114: {fileID: 1814730683}
+  - 114: {fileID: 1814730686}
+  - 61: {fileID: 1814730687}
   m_Layer: 0
   m_Name: KeyShard4
   m_TagString: Untagged
@@ -2458,6 +2544,32 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1814730686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814730681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33ae0c4b32f6c394e9db23789498a3fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  correspondingKey: {fileID: 0}
+--- !u!61 &1814730687
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814730681}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1.31, y: 1.595}
 --- !u!1 &1823098745
 GameObject:
   m_ObjectHideFlags: 0
