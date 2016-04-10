@@ -170,8 +170,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1118195621}
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1531327263}
+  m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -237,7 +237,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
 --- !u!1 &1118195620
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,11 +373,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is a sample paragraph, I have lots of ideas but I have no idea what
-    to write. I took Writing 31 which was about writing stories but I still have no
-    idea what to write about. I think very soon I might just typing gibberish just
-    to fill up this text box. I don't know, what do you think? Maybe its a good idea,
-    perahps, I should start speaking Japanese.
+  m_Text: None.
 --- !u!222 &1131746300
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -544,7 +540,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1488432289}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1531327262}
+        m_MethodName: AdvanceDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1488432289
@@ -580,15 +587,15 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1488432286}
---- !u!1 &1598970260
+--- !u!1 &1531327261
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 4
   m_Component:
-  - 4: {fileID: 1598970261}
-  - 114: {fileID: 1598970262}
+  - 4: {fileID: 1531327263}
+  - 114: {fileID: 1531327262}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -596,29 +603,30 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1598970261
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1598970260}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
---- !u!114 &1598970262
+--- !u!114 &1531327262
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1598970260}
+  m_GameObject: {fileID: 1531327261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 655a9d58e7832c6448ab2cadd8871fcd, type: 3}
+  m_Script: {fileID: 11500000, guid: 4aa31502a0893294fa376379a0148d5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1531327263
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1531327261}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 540243956}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
 --- !u!1 &1610632605
 GameObject:
   m_ObjectHideFlags: 0
