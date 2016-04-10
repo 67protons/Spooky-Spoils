@@ -11,3 +11,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/BlockRoom.unity
   - enabled: 1
     path: Assets/_Scenes/Foyer.unity
+  - enabled: 1
+    path: Assets/_Scenes/BossRoom.unity
+  - enabled: 1
+    path: Assets/_Scenes/TypeWriter.unity

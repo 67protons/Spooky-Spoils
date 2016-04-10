@@ -1,34 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LeverTrigger : MonoBehaviour {
+public class LeverTrigger : HiddenInFog {
     public GameObject correspondingDoor;
     public Sprite oppositeDoor;
     public Sprite pressedPlate;
 
-    private GazeAwareComponent _gazeAware;
-
-    void Awake()
+    void Start()
     {
-        _gazeAware = this.GetComponent<GazeAwareComponent>();
+        base.Start();
     }
 
     void Update()
     {
-        checkState();
-    }
-    void checkState()
-    {
-        if (_gazeAware.HasGaze)
-        {
-            this.GetComponent<SpriteRenderer>().enabled = true;
-            this.GetComponent<Collider2D>().enabled = true;
-        }
-        else
-        {
-            this.GetComponent<SpriteRenderer>().enabled = false;
-            this.GetComponent<Collider2D>().enabled = false;
-        }
+        base.Update();
     }
 
     void OnTriggerEnter2D(Collider2D other)
