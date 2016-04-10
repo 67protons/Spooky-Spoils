@@ -1460,6 +1460,56 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71f7526431b107943b7b750586046bed, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1215579412
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomBegin
+      value: Blackboune_Begin
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomHint
+      value: Backbourne_Hints
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1222047786
 GameObject:
   m_ObjectHideFlags: 0
@@ -2470,6 +2520,7 @@ GameObject:
   - 114: {fileID: 1814730683}
   - 114: {fileID: 1814730686}
   - 61: {fileID: 1814730687}
+  - 114: {fileID: 1814730688}
   m_Layer: 0
   m_Name: KeyShard4
   m_TagString: Untagged
@@ -2570,6 +2621,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.31, y: 1.595}
+--- !u!114 &1814730688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814730681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330dfe2313c91ac4f8661ebae5935778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filename: Blackbourn_End
+  enemies:
+  - {fileID: 0}
 --- !u!1 &1823098745
 GameObject:
   m_ObjectHideFlags: 0

@@ -574,7 +574,7 @@ Prefab:
       objectReference: {fileID: 1651250213}
     - target: {fileID: 149154, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_Name
-      value: LeverTrigger 1 (1)
+      value: LeverTrigger Final
       objectReference: {fileID: 0}
     - target: {fileID: 11400460, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: oppositeDoor
@@ -662,6 +662,23 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.53333336, y: 0.53333336}
+--- !u!114 &364688733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364688731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330dfe2313c91ac4f8661ebae5935778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filename: Statues_End
+  enemies:
+  - {fileID: 1860249835}
+  - {fileID: 121071881}
+  - {fileID: 1608265805}
+  - {fileID: 431127858}
 --- !u!1001 &376894145
 Prefab:
   m_ObjectHideFlags: 0
@@ -1401,6 +1418,14 @@ Prefab:
     - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: m_RootOrder
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomBegin
+      value: Statues_Begin
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomHint
+      value: Statues_Hints
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}

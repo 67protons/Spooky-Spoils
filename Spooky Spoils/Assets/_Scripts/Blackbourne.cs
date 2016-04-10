@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Blackbourne : MonoBehaviour {
+public class Blackbourne : Enemy {
     public int phase = 1;
     public GameObject projectile;
     public float shotFrequency;
@@ -33,6 +33,14 @@ public class Blackbourne : MonoBehaviour {
         else
         {
             cooldownCounter -= Time.deltaTime;
+        }
+    }
+
+    public override void Stop()
+    {
+        if (phase == 1)
+        {
+            this.phase = 2;
         }
     }
 }
