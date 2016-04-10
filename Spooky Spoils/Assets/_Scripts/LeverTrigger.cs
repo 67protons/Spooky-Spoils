@@ -3,6 +3,7 @@ using System.Collections;
 
 public class LeverTrigger : MonoBehaviour {
     public GameObject correspondingDoor;
+    public Sprite oppositeDoor;
     private GazeAwareComponent _gazeAware;
     void Awake()
     {
@@ -31,7 +32,8 @@ public class LeverTrigger : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            Destroy(correspondingDoor);
+            correspondingDoor.GetComponent<Collider2D>().enabled = false;
+            correspondingDoor.GetComponent<SpriteRenderer>().sprite = oppositeDoor;
         }
     }
 }
