@@ -396,6 +396,7 @@ GameObject:
   - 4: {fileID: 1438028112}
   - 212: {fileID: 1438028111}
   - 60: {fileID: 1438028110}
+  - 114: {fileID: 1438028113}
   m_Layer: 0
   m_Name: Lord BlackBourne - Neutral
   m_TagString: Untagged
@@ -488,6 +489,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1438028113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438028109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 409698bcbfaa1a643ac7958b77790933, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1679480672
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,11 @@ public class GhostPirate : MonoBehaviour {
     }
 
 	void Update () {
+        if (PlayerPrefs.GetInt("keys") == 2)
+        {
+            Destroy(this.gameObject);
+        }
+
         if (isChasing)
         {
             float step = speed * Time.deltaTime;
