@@ -1,0 +1,17 @@
+
+You heard tell that an ancient treasure is hidden 
+within the Blackbourne House down by the stream 
+outside of the city.
+|
+The treasure is an ancient heirloom that was passed 
+down the Blackbourne family for generations, but 
+the family faded into obscurity long ago. 
+|
+The idea of finding treasure tantalizes your 
+adventurous spirit, and you travel alone outside of 
+the city to the Blackbourne House.
+|
+You are the not first to try scavenging the 
+Blackbourne House.
+|
+No one has returned from the house by the stream.

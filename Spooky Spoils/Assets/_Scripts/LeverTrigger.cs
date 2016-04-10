@@ -5,11 +5,13 @@ public class LeverTrigger : HiddenInFog {
     public GameObject correspondingDoor;
     public Sprite oppositeDoor;
     public Sprite pressedPlate;
+    private AudioSource audioClip;
 
     void Start()
     {
         base.Start();
         this.GetComponent<Collider2D>().enabled = false;
+        audioClip = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -28,6 +30,7 @@ public class LeverTrigger : HiddenInFog {
             correspondingDoor.GetComponent<Collider2D>().enabled = false;
             correspondingDoor.GetComponent<SpriteRenderer>().sprite = oppositeDoor;
             this.GetComponent<SpriteRenderer>().sprite = pressedPlate;
+            audioClip.PlayOneShot(audioClip.clip);
         }
     }
 }

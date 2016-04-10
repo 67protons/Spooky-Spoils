@@ -14,26 +14,25 @@ public class DialogueManager : MonoBehaviour {
     {
         _dialoguePanel = this.transform.FindChild("Canvas").transform.FindChild("DialoguePanel").gameObject;
         _dialoguePanel.SetActive(false);
-    }
-    
-	void Start () {
-        StartDialogue("test.txt");       
-	}
+    }   	
 			
     public void StartDialogue(string filename)
     {
-        _dialogueList = File.ReadAllText("Assets\\_Dialogues\\" + filename).Split('|');        
+        _dialogueList = File.ReadAllText("Assets\\_Dialogues\\" + filename + ".txt").Split('|');    
         EnableDialoguePanel();
         _dialogueIndex = 0;
         PrintToDialogueBox();
+        Time.timeScale = 0;
     }
     
 
     public void AdvanceDialogue()
     {
         _dialogueIndex++;
-        if (_dialogueIndex >= _dialogueList.Length)
+        if (_dialogueIndex >= _dialogueList.Length){
             _dialoguePanel.SetActive(false);
+            Time.timeScale = 1;
+        }            
         else
             PrintToDialogueBox();
     }
