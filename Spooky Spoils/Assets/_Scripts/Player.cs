@@ -93,5 +93,13 @@ public class Player : MonoBehaviour {
         {
             this.transform.Translate(new Vector2(0f, -moveSpeed * Time.deltaTime));
         }
-    }    
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+    }
 }

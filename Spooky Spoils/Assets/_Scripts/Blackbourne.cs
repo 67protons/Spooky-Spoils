@@ -27,8 +27,7 @@ public class Blackbourne : MonoBehaviour {
             Vector2 direction = _playerObject.transform.position - this.transform.position;
             GameObject newProjectile = (GameObject)Instantiate(projectile);
             newProjectile.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 100f);
-            Destroy(newProjectile, 10f);
-            //Debug.Log(direction);
+            Destroy(newProjectile, 10f);            
             cooldownCounter = shotFrequency;
         }
         else
