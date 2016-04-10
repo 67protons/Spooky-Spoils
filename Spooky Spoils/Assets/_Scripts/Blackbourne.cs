@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Blackbourne : MonoBehaviour {
+public class Blackbourne : Enemy {
     public int phase = 1;
     public GameObject projectile;
     public float shotFrequency;
@@ -27,13 +27,20 @@ public class Blackbourne : MonoBehaviour {
             Vector2 direction = _playerObject.transform.position - this.transform.position;
             GameObject newProjectile = (GameObject)Instantiate(projectile);
             newProjectile.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 100f);
-            Destroy(newProjectile, 10f);
-            //Debug.Log(direction);
+            Destroy(newProjectile, 10f);            
             cooldownCounter = shotFrequency;
         }
         else
         {
             cooldownCounter -= Time.deltaTime;
+        }
+    }
+
+    public override void Stop()
+    {
+        if (phase == 1)
+        {
+            this.phase = 2;
         }
     }
 }

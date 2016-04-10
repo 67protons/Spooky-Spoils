@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GhostStatue : MonoBehaviour {
+public class GhostStatue : Enemy {
 
     public float speed = 1f;
     public bool isChasing = false;
@@ -45,5 +45,11 @@ public class GhostStatue : MonoBehaviour {
         {
             anim.SetBool("isAttacking", false);
         }
+    }
+
+    public override void Stop()
+    {
+        this.activated = false;
+        anim.Play("Entry");
     }
 }

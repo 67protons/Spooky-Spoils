@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GhostPirate : MonoBehaviour {
+public class GhostPirate : Enemy {
     public float speed = 1f;
     public bool isChasing = false;
     private GameObject player;
@@ -23,4 +23,9 @@ public class GhostPirate : MonoBehaviour {
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
         }
 	}
+
+    public override void Stop()
+    {
+        Destroy(this.gameObject);
+    }
 }

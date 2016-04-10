@@ -71,8 +71,11 @@ public class BlockPuzzleManager : MonoBehaviour {
     {
         foreach (GameObject ghost in ghostPirates)
         {
-            ghost.GetComponent<SpriteRenderer>().enabled = enabled;
-            ghost.GetComponent<GhostPirate>().isChasing = enabled;
+            if (ghost != null)
+            {
+                ghost.GetComponent<SpriteRenderer>().enabled = enabled;
+                ghost.GetComponent<GhostPirate>().isChasing = enabled;
+            }            
         }
     }
 

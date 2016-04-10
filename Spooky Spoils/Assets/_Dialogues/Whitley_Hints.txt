@@ -1,16 +1,6 @@
 
 HINT:
-Try t’ be more like One-Eyed Whitley t’ see hidden 
-objects.
-|
-HINT:
-Put an eyepatch o'er yer left eye t' make hidden 
-objects appear.
-|
-HINT:
-Put an eyepatch o'er yer right eye t' make objects
-disappear.
-|
-HINT:
-An eyepatch o'er any eye will let ye see foul
-entities.
+Try t' be more like One-Eyed Whitley t' see hidden 
+objects. Put an eyepatch o'er yer left eye t' make hidden 
+objects appear, o'er yer right eye t' make objects disappear. 
+An eyepatch o'er any eye will let ye see foul entities.

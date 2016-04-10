@@ -9,6 +9,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 466668}
   - 114: {fileID: 11460428}
+  - 114: {fileID: 11444234}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -216,6 +217,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &11444234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 101440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4faaab78cd3dade48a6180fa5a888d5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomBegin: 
+  roomHint: 
 --- !u!114 &11457380
 MonoBehaviour:
   m_ObjectHideFlags: 1
