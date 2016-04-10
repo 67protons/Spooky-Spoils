@@ -21,3 +21,9 @@ EditorBuildSettings:
     path: Assets/_Scenes/BossRoom.unity
   - enabled: 1
     path: Assets/_Scenes/StatueRoom2.unity
+  - enabled: 1
+    path: Assets/_Scenes/Foyer4.unity
+  - enabled: 1
+    path: Assets/_Scenes/Hallway2.unity
+  - enabled: 1
+    path: Assets/_Scenes/TreasureRoom.unity
