@@ -5,7 +5,7 @@ public class RoomDialogue : MonoBehaviour {
     public string roomBegin = "";
     public string roomEnd = "";
     public string roomHint = "";
-    private DialogueManager _dialogueManager;
+    private DialogueManager _dialogueManager;    
 
     void Awake()
     {

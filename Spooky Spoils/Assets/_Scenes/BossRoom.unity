@@ -1843,6 +1843,7 @@ GameObject:
   - 212: {fileID: 1438028111}
   - 60: {fileID: 1438028110}
   - 114: {fileID: 1438028113}
+  - 114: {fileID: 1438028114}
   m_Layer: 0
   m_Name: Lord BlackBourne - Neutral
   m_TagString: Untagged
@@ -1946,6 +1947,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409698bcbfaa1a643ac7958b77790933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1438028114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1438028109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ac103d1b8d11a4a9dff3714befb6c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  phase: 1
+  projectile: {fileID: 128068, guid: a0d6ef9374f30084eb5c4a0547179cde, type: 2}
+  shotFrequency: 0.75
 --- !u!1 &1481180191
 GameObject:
   m_ObjectHideFlags: 0

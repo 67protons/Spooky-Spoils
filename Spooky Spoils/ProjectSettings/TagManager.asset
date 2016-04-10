@@ -9,6 +9,7 @@ TagManager:
   - GhostStatue
   - FakeCrate
   - Barrel
+  - Enemy
   layers:
   - Default
   - TransparentFX

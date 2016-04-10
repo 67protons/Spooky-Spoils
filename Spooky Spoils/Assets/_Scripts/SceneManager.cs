@@ -21,8 +21,7 @@ public class SceneManager : MonoBehaviour {
 
             if (_playerHasKey)
                 Destroy(key.gameObject);
-        }
-           
+        }           
     }
 
     void OnTriggerEnter2D(Collider2D other) 
