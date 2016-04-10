@@ -57,6 +57,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correspondingDoor: {fileID: 0}
+  oppositeDoor: {fileID: 0}
 --- !u!114 &11441500
 MonoBehaviour:
   m_ObjectHideFlags: 1
