@@ -13,7 +13,7 @@ GameObject:
   - 212: {fileID: 21214644}
   - 114: {fileID: 11441500}
   m_Layer: 0
-  m_Name: LeverTrigger 1
+  m_Name: LeverTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -56,6 +56,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce4e5329fa4389c41854dfa6003f8a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  correspondingDoor: {fileID: 0}
 --- !u!114 &11441500
 MonoBehaviour:
   m_ObjectHideFlags: 1

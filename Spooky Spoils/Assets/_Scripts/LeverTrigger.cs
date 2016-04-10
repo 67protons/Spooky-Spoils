@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class LeverTrigger : MonoBehaviour {
+    public GameObject correspondingDoor;
     private GazeAwareComponent _gazeAware;
     void Awake()
     {
@@ -30,7 +31,7 @@ public class LeverTrigger : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            //owner.activated = true;
+            Destroy(correspondingDoor);
         }
     }
 }
