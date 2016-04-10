@@ -94,11 +94,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -4.36
+      value: -7.71
       objectReference: {fileID: 0}
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.44
+      value: 0.98
       objectReference: {fileID: 0}
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.z
@@ -540,11 +540,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.72
+      value: 1.32
       objectReference: {fileID: 0}
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.85
+      value: 6.95
       objectReference: {fileID: 0}
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.z
@@ -984,11 +984,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 6.72
+      value: 7.8
       objectReference: {fileID: 0}
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -2.65
+      value: -2.24
       objectReference: {fileID: 0}
     - target: {fileID: 488544, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1268,7 +1268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: BossRoom
+  Scene1: 
+  Scene2: BossRoom
+  key: {fileID: 0}
 --- !u!61 &1340944342
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1349,7 +1351,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Scene: Foyer
+  Scene1: 
+  Scene2: Foyer3
+  key: {fileID: 0}
 --- !u!114 &1608265805 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11499562, guid: 6df6b4155a11ebb4bb7a99bbd62bd7c1,

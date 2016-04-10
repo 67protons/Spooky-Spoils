@@ -666,6 +666,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1435320615}
   - 61: {fileID: 1435320617}
+  - 114: {fileID: 1435320616}
   m_Layer: 0
   m_Name: StatueRoom
   m_TagString: Untagged
@@ -685,6 +686,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1435320616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1435320614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Scene1: 
+  Scene2: StatueRoom1
+  key: {fileID: 0}
 --- !u!61 &1435320617
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -708,7 +723,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1666526330}
   - 61: {fileID: 1666526329}
-  - 114: {fileID: 1666526328}
   m_Layer: 0
   m_Name: BlockRoom
   m_TagString: Untagged
@@ -716,20 +730,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1666526328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1666526327}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c9acbd46bd9898a4cb52def9b64e9dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Scene1: 
-  Scene2: BlockRoom
-  key: {fileID: 0}
 --- !u!61 &1666526329
 BoxCollider2D:
   m_ObjectHideFlags: 0

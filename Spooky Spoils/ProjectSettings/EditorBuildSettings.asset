@@ -13,3 +13,11 @@ EditorBuildSettings:
     path: Assets/_Scenes/Foyer2.unity
   - enabled: 1
     path: Assets/_Scenes/BlockRoom.unity
+  - enabled: 1
+    path: Assets/_Scenes/Foyer3.unity
+  - enabled: 1
+    path: Assets/_Scenes/StatueRoom1.unity
+  - enabled: 1
+    path: Assets/_Scenes/BossRoom.unity
+  - enabled: 1
+    path: Assets/_Scenes/StatueRoom2.unity
