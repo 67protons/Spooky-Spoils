@@ -1,16 +1,17 @@
+
 YOU:
-Hmm...a key? Let’s see what it unlocks.
+Hmm...a key? Let's see what it unlocks.
 |
 ONE-EYED WHITLEY:
 Blimey, yer an elusive bilge rat! 
 |
 ONE-EYED WHITLEY:
 Ye stole the only booty we plundered from this 
-accursed house, but I’ll tell ye that ye’ll never find 
+accursed house, but I'll tell ye that ye'll never find 
 the motherload! Not even the One-Eyed pirates 
 could take it from that scallywag Blackbourne!
 |
 ONE_EYED WHITLEY:
-Come now, me hearties, let’s go get grog 
-blossom’d!
+Come now, me hearties, let's go get grog 
+blossom'd!
 

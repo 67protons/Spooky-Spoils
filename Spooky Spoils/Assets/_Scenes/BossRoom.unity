@@ -183,7 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scene1: 
   Scene2: StatueRoom2
-  key: {fileID: 0}
+  key: {fileID: 1814730689}
 --- !u!1 &166604450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1427,11 +1427,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 436052, guid: 71f7526431b107943b7b750586046bed, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -6.79
+      value: 7.24
       objectReference: {fileID: 0}
     - target: {fileID: 436052, guid: 71f7526431b107943b7b750586046bed, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 7.04
+      value: -3.16
       objectReference: {fileID: 0}
     - target: {fileID: 436052, guid: 71f7526431b107943b7b750586046bed, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1501,11 +1501,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomBegin
-      value: Blackboune_Begin
+      value: Blackbourne_Begin
       objectReference: {fileID: 0}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomHint
-      value: Backbourne_Hints
+      value: Blackbourne_Hints
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
@@ -1920,7 +1920,6 @@ GameObject:
   - 4: {fileID: 1438028112}
   - 212: {fileID: 1438028111}
   - 60: {fileID: 1438028110}
-  - 114: {fileID: 1438028113}
   - 114: {fileID: 1438028114}
   m_Layer: 0
   m_Name: Lord BlackBourne - Neutral
@@ -2014,17 +2013,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
---- !u!114 &1438028113
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1438028109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 409698bcbfaa1a643ac7958b77790933, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1438028114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2038,7 +2026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   phase: 1
   projectile: {fileID: 128068, guid: a0d6ef9374f30084eb5c4a0547179cde, type: 2}
-  shotFrequency: 0.75
+  shotFrequency: 1
 --- !u!1 &1481180191
 GameObject:
   m_ObjectHideFlags: 0
@@ -2521,6 +2509,7 @@ GameObject:
   - 114: {fileID: 1814730686}
   - 61: {fileID: 1814730687}
   - 114: {fileID: 1814730688}
+  - 114: {fileID: 1814730689}
   m_Layer: 0
   m_Name: KeyShard4
   m_TagString: Untagged
@@ -2632,9 +2621,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330dfe2313c91ac4f8661ebae5935778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: Blackbourn_End
+  filename: Blackbourne_End
   enemies:
-  - {fileID: 0}
+  - {fileID: 1438028114}
+--- !u!114 &1814730689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814730681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6f99c20b789b4468c50cd46c048cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasKey: 0
 --- !u!1 &1823098745
 GameObject:
   m_ObjectHideFlags: 0

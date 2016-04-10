@@ -1,10 +1,11 @@
+
 YOU:
 Ah-ha! The treasure!
 |
 BLACKBOURNE:
 Thou foul wretch! First, thou most cravenly run 
 from me in single combat, and now thou stealeth 
-from mine family’s treasury! Have thee no honor, 
+from mine family's treasury! Have thee no honor, 
 thief?
 |
 BLACKBOURNE:

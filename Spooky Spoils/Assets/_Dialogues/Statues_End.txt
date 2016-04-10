@@ -1,3 +1,4 @@
+
 YOU:
 Yes, the key!
 |
@@ -16,9 +17,9 @@ end. Please defeat the tyrannical Blackbourne for
 me.
 |
 KAWAII STATUE:
-Kyaah~! A-Arigato, Explorer-sama! You’re so 
+Kyaah~! A-Arigato, Explorer-sama! You're so 
 sugoi, desu! M-my heart would be going 
-‘doki-doki’ if I had one! 
+'doki-doki' if I had one! 
 |
 KAWAII STATUE:
 N-Now we can move on to the afterlife instead of 
