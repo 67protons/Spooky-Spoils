@@ -13,7 +13,8 @@ public class RoomDialogue : MonoBehaviour {
 
     void Start()
     {
-        _dialogueManager.StartDialogue(roomBegin);   
+        if (roomBegin != "")
+            _dialogueManager.StartDialogue(roomBegin);   
     }
 
     void Update()

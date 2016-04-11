@@ -334,6 +334,56 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.53, y: 11.21}
+--- !u!1001 &948962318
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomBegin
+      value: Flashlight_Begin
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomHint
+      value: Flashlight_Hints
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1188103764
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +484,7 @@ GameObject:
   - 114: {fileID: 1822383787}
   - 114: {fileID: 1822383783}
   - 114: {fileID: 1822383788}
+  - 114: {fileID: 1822383789}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -534,3 +585,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 861786a747fe54a42801fbab0ab91124, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1822383789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1822383782}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 330dfe2313c91ac4f8661ebae5935778, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filename: Flashlight_End
+  enemies: []
