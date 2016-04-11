@@ -2,21 +2,25 @@
 using System.Collections;
 
 public class KeyPickup : MonoBehaviour {
-    public bool hasKey = false;    
+    public bool hasKey = false;
+    private GazeAwareComponent _gazeAware;
 	public virtual void Awake () {
-        this.GetComponent<Collider2D>().enabled = false;
+        _gazeAware = this.GetComponent<GazeAwareComponent>();
+        if (_gazeAware != null)
+            this.GetComponent<Collider2D>().enabled = false;
 	}
 		
     public virtual void Update()
-    {
-        if (this.GetComponent<GazeAwareComponent>().HasGaze)
+    {        
+        if (_gazeAware != null && _gazeAware.HasGaze)
         {
             this.GetComponent<Collider2D>().enabled = true;
         }
 	}
 
-    void OnTriggerEnter2D(Collider2D other)
+    public virtual void OnTriggerEnter2D(Collider2D other)
     {
-        hasKey = true;
+        if (other.CompareTag("Player"))
+            hasKey = true;
     }
 }

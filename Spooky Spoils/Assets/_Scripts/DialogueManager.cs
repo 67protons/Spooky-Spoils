@@ -24,6 +24,14 @@ public class DialogueManager : MonoBehaviour {
         PrintToDialogueBox();
         Time.timeScale = 0;
     }
+
+    void Update()
+    {
+        if (_dialoguePanel.activeSelf && (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space)))
+        {
+            AdvanceDialogue();
+        }
+    }
     
 
     public void AdvanceDialogue()
