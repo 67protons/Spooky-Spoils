@@ -1,5 +1,5 @@
 Mouse Control - Andrew and Edwin
-	left right click = left right eyes
+	left right click = left right eyes - done
 	spotlight
 
 LockDoor Dialogue - Andrew and Edwin
