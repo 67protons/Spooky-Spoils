@@ -40,6 +40,22 @@ public class SceneManager : MonoBehaviour {
         }
     }
 
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            if (key == null)
+                Application.LoadLevel(Scene2);
+            else
+            {
+                if (_playerHasKey)
+                    Application.LoadLevel(Scene2);
+                else if (Scene1 != "")
+                    Application.LoadLevel(Scene1);
+            }
+        }
+    }
+
 	void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Player"))

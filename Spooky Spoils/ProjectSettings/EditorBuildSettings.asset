@@ -31,3 +31,5 @@ EditorBuildSettings:
     path: Assets/_Scenes/TreasureRoom.unity
   - enabled: 1
     path: Assets/_Scenes/Foyer5.unity
+  - enabled: 1
+    path: Assets/_Scenes/BossRoom2.unity
