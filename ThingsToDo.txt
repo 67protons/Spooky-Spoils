@@ -1,0 +1,18 @@
+Mouse Control
+	left right click = left right eyes
+	spotlight
+LockDoor Dialogue
+Quit through front door
+Change blocks sprites in boss room
+endless hallway
+sound for key pickup
+double check dialogue cutoffs
+test z axis on multiple computers
+Colored eyes
+
+Statue ghosts - free spirit - not really
+
+Optional:
+Character Dark
+key shard diagram
+scummy statue 2 room switches
