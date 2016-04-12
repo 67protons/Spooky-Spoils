@@ -10,6 +10,8 @@ TagManager:
   - FakeCrate
   - Barrel
   - Enemy
+  - Key
+  - Shard
   layers:
   - Default
   - TransparentFX

@@ -1103,7 +1103,7 @@ GameObject:
   - 114: {fileID: 861865530}
   m_Layer: 0
   m_Name: KeyShard3
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1980,7 +1980,7 @@ GameObject:
   - 114: {fileID: 1481180198}
   m_Layer: 0
   m_Name: KeyShard2
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2263,7 +2263,7 @@ GameObject:
   - 114: {fileID: 1726353895}
   m_Layer: 0
   m_Name: KeyShard1
-  m_TagString: Untagged
+  m_TagString: Shard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2504,7 +2504,7 @@ GameObject:
   - 114: {fileID: 1814730688}
   m_Layer: 0
   m_Name: Key
-  m_TagString: Untagged
+  m_TagString: Key
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
