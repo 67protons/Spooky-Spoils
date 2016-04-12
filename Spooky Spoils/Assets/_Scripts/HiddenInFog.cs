@@ -23,20 +23,14 @@ public class HiddenInFog : MonoBehaviour {
 	    
 	}
 		
-	public virtual void Update () {
-        ManageState();
-	}
-
-    private void ManageState()
-    {
+	public virtual void Update () {        
         if (_gazeAware.HasGaze)
         {
-            //Debug.Log("Senpai noticed me");
             _spriteRenderer.enabled = true;
         }
         else
         {
             _spriteRenderer.enabled = false;
         }
-    }
+	}
 }

@@ -3,7 +3,8 @@ using System.Collections;
 
 public class BlockPuzzleManager : MonoBehaviour {
     public float thresholdMs = 100f;
-    public Texture originalEyeSpot, leftEyeSpot, rightEyeSpot;
+    private Texture originalEyeSpot;
+    public Texture leftEyeSpot, rightEyeSpot;
     private EyePositionDataComponent _eyePositionDataComponent;
     private Light _spotlight;
     private GameObject[] ghostCrates;

@@ -16,7 +16,6 @@ public class SpotlightManager : MonoBehaviour {
 
     void Start()
     {
-        Debug.Log(tobiiOn);
         _gazePointDataComponent = GetComponent<GazePointDataComponent>();
         _userPresenceComponent = GetComponent<UserPresenceComponent>();
         _lightComponent = GetComponent<Light>();
