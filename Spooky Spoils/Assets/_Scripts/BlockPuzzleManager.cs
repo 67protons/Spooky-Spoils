@@ -27,25 +27,27 @@ public class BlockPuzzleManager : MonoBehaviour {
     {
         EyeXEyePosition eyePosition = _eyePositionDataComponent.LastEyePosition;
         if (eyePosition != null)
-        {            
-            if (eyePosition.LeftEye.IsValid ^ eyePosition.RightEye.IsValid)
+        {
+            //Debug.Log(Input.GetKey(KeyCode.Mouse0));
+            if ((InputManager.tobiiOn && (eyePosition.LeftEye.IsValid ^ eyePosition.RightEye.IsValid)) || 
+                (!InputManager.tobiiOn && (Input.GetKey(KeyCode.Mouse0) ^ Input.GetKey(KeyCode.Mouse1))))
             {                
                 _deactivatedRenderTime = 0f;
                 _activatedRenderTime += Time.deltaTime;
                 if (_activatedRenderTime >= (thresholdMs / 1000f))
                 {
                     ToggleGhostPirates(true);
-                    if (eyePosition.RightEye.IsValid)   //Right-eye is open
-                    {                        
+                    if (eyePosition.RightEye.IsValid || Input.GetKey(KeyCode.Mouse0))   //Right-eye is open
+                    {
                         _spotlight.cookie = rightEyeSpot;
                         ToggleGhostCrates(true);
                     }
-                    else if (eyePosition.LeftEye.IsValid)   //Left-eye is open
+                    else if (eyePosition.LeftEye.IsValid || Input.GetKey(KeyCode.Mouse1))   //Left-eye is open
                     {
                         _spotlight.cookie = leftEyeSpot;
                         ToggleFakeCrates(true);
                     }
-                }             
+                }
             }
             else
             {                          
