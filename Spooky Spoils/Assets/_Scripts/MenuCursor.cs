@@ -40,4 +40,9 @@ public class MenuCursor : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Return) && transform.position == exitOffset)
             Application.Quit();
 	}
+
+    public void TobiiOn(bool activated)
+    {
+        SpotlightManager.tobiiOn = activated;
+    }
 }

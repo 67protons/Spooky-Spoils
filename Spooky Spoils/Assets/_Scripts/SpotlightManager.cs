@@ -3,6 +3,7 @@
 [RequireComponent(typeof(GazePointDataComponent), typeof(UserPresenceComponent), typeof(Light))]
 
 public class SpotlightManager : MonoBehaviour {
+    public static bool tobiiOn = true;
     private GazePointDataComponent _gazePointDataComponent;
     private UserPresenceComponent _userPresenceComponent;
     private Light _lightComponent;
@@ -15,6 +16,7 @@ public class SpotlightManager : MonoBehaviour {
 
     void Start()
     {
+        Debug.Log(tobiiOn);
         _gazePointDataComponent = GetComponent<GazePointDataComponent>();
         _userPresenceComponent = GetComponent<UserPresenceComponent>();
         _lightComponent = GetComponent<Light>();
@@ -56,5 +58,10 @@ public class SpotlightManager : MonoBehaviour {
         _historicPoint = smoothedPoint;
 
         return smoothedPoint;
+    }
+
+    public static void ToggleTobiiOn()
+    {
+        tobiiOn = !tobiiOn;
     }
 }
