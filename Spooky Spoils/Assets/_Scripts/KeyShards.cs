@@ -3,6 +3,19 @@ using System.Collections;
 
 public class KeyShards : MonoBehaviour{
     public GameObject correspondingKey;
+    private GazeAwareComponent _gazeAware;
+    private MouseAwareComponent _mouseAware;
+    private bool HasGaze
+    {
+        get { return ((InputManager.tobiiOn && _gazeAware.HasGaze) || (!InputManager.tobiiOn && _mouseAware.HasMouse)); }
+    }
+
+    void Awake()
+    {
+        _gazeAware = this.GetComponent<GazeAwareComponent>();
+        _mouseAware = this.GetComponent<MouseAwareComponent>();
+    }
+
     void Start()
     {
         this.GetComponent<Collider2D>().enabled = false;
@@ -10,7 +23,7 @@ public class KeyShards : MonoBehaviour{
 
     void Update()
     {
-        if (this.GetComponent<GazeAwareComponent>().HasGaze)
+        if (this.HasGaze)
         {
             this.GetComponent<Collider2D>().enabled = true;
         }

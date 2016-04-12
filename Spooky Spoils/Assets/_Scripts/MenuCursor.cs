@@ -43,6 +43,6 @@ public class MenuCursor : MonoBehaviour {
 
     public void TobiiOn(bool activated)
     {
-        SpotlightManager.tobiiOn = activated;
+        InputManager.tobiiOn = activated;
     }
 }

@@ -396,8 +396,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   thresholdMs: 100
-  leftEyeSpot: {fileID: 2800000, guid: f085df8e4ae53f54791e4ba107533057, type: 3}
-  rightEyeSpot: {fileID: 2800000, guid: e26e4a31bbc5ec84d926738a128048f8, type: 3}
+  originalEyeSpot: {fileID: 0}
+  leftEyeSpot: {fileID: 2800000, guid: d41d1c3b693988d499eb77aa3d198766, type: 3}
+  rightEyeSpot: {fileID: 2800000, guid: 0e66f98d23aad7449ac1803cb7aa3c66, type: 3}
 --- !u!4 &916393329
 Transform:
   m_ObjectHideFlags: 0

@@ -169,24 +169,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!1 &65337863 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 125250, guid: 71f7526431b107943b7b750586046bed, type: 2}
-  m_PrefabInternal: {fileID: 1194645633}
---- !u!61 &65337864
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 65337863}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0.016242981, y: 0.016242981}
-  serializedVersion: 2
-  m_Size: {x: 0.8260422, y: 0.9551536}
 --- !u!1 &166604450
 GameObject:
   m_ObjectHideFlags: 0
@@ -261,6 +243,7 @@ GameObject:
   - 114: {fileID: 181671782}
   - 61: {fileID: 181671781}
   - 114: {fileID: 181671785}
+  - 114: {fileID: 181671786}
   m_Layer: 0
   m_Name: ghostly_crate (2)
   m_TagString: Untagged
@@ -349,6 +332,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &181671786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 181671780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &322642601
 GameObject:
   m_ObjectHideFlags: 0
@@ -392,6 +388,7 @@ GameObject:
   - 114: {fileID: 484813998}
   - 61: {fileID: 484813997}
   - 114: {fileID: 484814001}
+  - 114: {fileID: 484814002}
   m_Layer: 0
   m_Name: ghostly_crate (7)
   m_TagString: Untagged
@@ -480,6 +477,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &484814002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 484813996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &560074729
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +544,7 @@ GameObject:
   - 114: {fileID: 614451435}
   - 61: {fileID: 614451434}
   - 114: {fileID: 614451433}
+  - 114: {fileID: 614451437}
   m_Layer: 0
   m_Name: ghostly_crate (14)
   m_TagString: Untagged
@@ -622,6 +633,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &614451437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 614451431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &616055577
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +658,7 @@ GameObject:
   - 114: {fileID: 616055579}
   - 61: {fileID: 616055578}
   - 114: {fileID: 616055582}
+  - 114: {fileID: 616055583}
   m_Layer: 0
   m_Name: ghostly_crate (13)
   m_TagString: Untagged
@@ -722,6 +747,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &616055583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 616055577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &691958765
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,6 +829,7 @@ GameObject:
   - 114: {fileID: 735675909}
   - 61: {fileID: 735675908}
   - 114: {fileID: 735675912}
+  - 114: {fileID: 735675913}
   m_Layer: 0
   m_Name: ghostly_crate
   m_TagString: Untagged
@@ -879,6 +918,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &735675913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 735675907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &780043884
 GameObject:
   m_ObjectHideFlags: 0
@@ -933,6 +985,7 @@ GameObject:
   - 114: {fileID: 856642155}
   - 61: {fileID: 856642154}
   - 114: {fileID: 856642158}
+  - 114: {fileID: 856642159}
   m_Layer: 0
   m_Name: ghostly_crate (10)
   m_TagString: Untagged
@@ -1021,6 +1074,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &856642159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 856642153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &861865523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1034,6 +1100,7 @@ GameObject:
   - 114: {fileID: 861865525}
   - 114: {fileID: 861865528}
   - 61: {fileID: 861865529}
+  - 114: {fileID: 861865530}
   m_Layer: 0
   m_Name: KeyShard3
   m_TagString: Untagged
@@ -1134,6 +1201,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.31, y: 1.595}
+--- !u!114 &861865530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 861865523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1126801017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,8 +1295,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6159918, guid: 71f7526431b107943b7b750586046bed, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 71f7526431b107943b7b750586046bed, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &1215579412
@@ -1285,6 +1364,7 @@ GameObject:
   - 114: {fileID: 1222047788}
   - 61: {fileID: 1222047787}
   - 114: {fileID: 1222047791}
+  - 114: {fileID: 1222047792}
   m_Layer: 0
   m_Name: ghostly_crate (12)
   m_TagString: Untagged
@@ -1373,6 +1453,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &1222047792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222047786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1268496848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1385,6 +1478,7 @@ GameObject:
   - 114: {fileID: 1268496850}
   - 61: {fileID: 1268496849}
   - 114: {fileID: 1268496853}
+  - 114: {fileID: 1268496854}
   m_Layer: 0
   m_Name: ghostly_crate (5)
   m_TagString: Untagged
@@ -1473,6 +1567,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &1268496854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1268496848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1413229989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1592,7 @@ GameObject:
   - 114: {fileID: 1413229993}
   - 61: {fileID: 1413229992}
   - 114: {fileID: 1413229991}
+  - 114: {fileID: 1413229995}
   m_Layer: 0
   m_Name: ghostly_crate (16)
   m_TagString: Untagged
@@ -1573,6 +1681,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1413229995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413229989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1430876058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1585,6 +1706,7 @@ GameObject:
   - 114: {fileID: 1430876060}
   - 61: {fileID: 1430876059}
   - 114: {fileID: 1430876063}
+  - 114: {fileID: 1430876064}
   m_Layer: 0
   m_Name: ghostly_crate (9)
   m_TagString: Untagged
@@ -1673,6 +1795,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &1430876064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1430876058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1001 &1438060744
 Prefab:
   m_ObjectHideFlags: 0
@@ -1727,6 +1862,7 @@ GameObject:
   - 114: {fileID: 1447591749}
   - 61: {fileID: 1447591748}
   - 114: {fileID: 1447591747}
+  - 114: {fileID: 1447591751}
   m_Layer: 0
   m_Name: ghostly_crate (19)
   m_TagString: Untagged
@@ -1815,6 +1951,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1447591751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1447591745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1481180191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1828,6 +1977,7 @@ GameObject:
   - 114: {fileID: 1481180193}
   - 114: {fileID: 1481180196}
   - 61: {fileID: 1481180197}
+  - 114: {fileID: 1481180198}
   m_Layer: 0
   m_Name: KeyShard2
   m_TagString: Untagged
@@ -1928,6 +2078,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.31, y: 1.595}
+--- !u!114 &1481180198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1481180191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1585076169
 GameObject:
   m_ObjectHideFlags: 0
@@ -1940,6 +2103,7 @@ GameObject:
   - 114: {fileID: 1585076171}
   - 61: {fileID: 1585076170}
   - 114: {fileID: 1585076174}
+  - 114: {fileID: 1585076175}
   m_Layer: 0
   m_Name: ghostly_crate (3)
   m_TagString: Untagged
@@ -2028,6 +2192,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &1585076175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1585076169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1679480672
 GameObject:
   m_ObjectHideFlags: 0
@@ -2083,6 +2260,7 @@ GameObject:
   - 114: {fileID: 1726353890}
   - 114: {fileID: 1726353893}
   - 61: {fileID: 1726353894}
+  - 114: {fileID: 1726353895}
   m_Layer: 0
   m_Name: KeyShard1
   m_TagString: Untagged
@@ -2183,6 +2361,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.31, y: 1.595}
+--- !u!114 &1726353895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726353888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1734140466
 GameObject:
   m_ObjectHideFlags: 0
@@ -2195,6 +2386,7 @@ GameObject:
   - 114: {fileID: 1734140470}
   - 61: {fileID: 1734140469}
   - 114: {fileID: 1734140468}
+  - 114: {fileID: 1734140472}
   m_Layer: 0
   m_Name: ghostly_crate (15)
   m_TagString: Untagged
@@ -2283,6 +2475,19 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1734140472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1734140466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1814730681
 GameObject:
   m_ObjectHideFlags: 0
@@ -2296,6 +2501,7 @@ GameObject:
   - 114: {fileID: 1814730683}
   - 61: {fileID: 1814730687}
   - 114: {fileID: 1814730686}
+  - 114: {fileID: 1814730688}
   m_Layer: 0
   m_Name: Key
   m_TagString: Untagged
@@ -2396,6 +2602,19 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.09248942}
   serializedVersion: 2
   m_Size: {x: 1.31, y: 1.4100211}
+--- !u!114 &1814730688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1814730681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1823098745
 GameObject:
   m_ObjectHideFlags: 0
@@ -2440,6 +2659,7 @@ GameObject:
   - 114: {fileID: 1886962010}
   - 61: {fileID: 1886962009}
   - 114: {fileID: 1886962013}
+  - 114: {fileID: 1886962014}
   m_Layer: 0
   m_Name: ghostly_crate (11)
   m_TagString: Untagged
@@ -2528,6 +2748,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &1886962014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1886962008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1917566398
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,6 +2773,7 @@ GameObject:
   - 114: {fileID: 1917566402}
   - 61: {fileID: 1917566401}
   - 114: {fileID: 1917566400}
+  - 114: {fileID: 1917566404}
   m_Layer: 0
   m_Name: ghostly_crate (17)
   m_TagString: Untagged
@@ -2628,3 +2862,16 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!114 &1917566404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1917566398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}

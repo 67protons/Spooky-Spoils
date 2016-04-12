@@ -8,15 +8,17 @@ public class GhostStatue : Enemy {
     public bool activated = false;
     public bool hasGaze
     {
-        get { return _gazeAware.HasGaze; }
+        get { return ((InputManager.tobiiOn && _gazeAware.HasGaze) || (!InputManager.tobiiOn && _mouseAware.HasMouse)); }
     }
     private GameObject player;
     private GazeAwareComponent _gazeAware;
+    private MouseAwareComponent _mouseAware;
     public Animator anim;
 
     void Awake()
     {
         _gazeAware = this.GetComponent<GazeAwareComponent>();
+        _mouseAware = this.GetComponent<MouseAwareComponent>();
         player = GameObject.FindGameObjectWithTag("Player");
         anim = this.GetComponent<Animator>();
     }
