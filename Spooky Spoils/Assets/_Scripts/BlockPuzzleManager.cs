@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BlockPuzzleManager : MonoBehaviour {
     public float thresholdMs = 100f;
-    public Texture leftEyeSpot, rightEyeSpot;
+    public Texture originalEyeSpot, leftEyeSpot, rightEyeSpot;
     private EyePositionDataComponent _eyePositionDataComponent;
     private Light _spotlight;
     private GameObject[] ghostCrates;
@@ -16,9 +16,10 @@ public class BlockPuzzleManager : MonoBehaviour {
     {
         _eyePositionDataComponent = this.GetComponent<EyePositionDataComponent>();
         _spotlight = GameObject.Find("Spotlight").GetComponent<Light>();
+        originalEyeSpot = _spotlight.GetComponent<Light>().cookie;
         ghostCrates = GameObject.FindGameObjectsWithTag("PirateVisible");
         ghostPirates = GameObject.FindGameObjectsWithTag("GhostPirate");
-        fakeCrates = GameObject.FindGameObjectsWithTag("FakeCrate");
+        fakeCrates = GameObject.FindGameObjectsWithTag("FakeCrate");        
     }
 
     void Update()
@@ -51,7 +52,7 @@ public class BlockPuzzleManager : MonoBehaviour {
                 _deactivatedRenderTime += Time.deltaTime;
                 if (_deactivatedRenderTime >= (thresholdMs / 1000f))
                 {
-                    _spotlight.cookie = null;
+                    _spotlight.cookie = originalEyeSpot;
                     ToggleGhostCrates(false);
                     ToggleGhostPirates(false);
                     ToggleFakeCrates(false);
