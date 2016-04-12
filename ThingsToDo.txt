@@ -1,18 +1,25 @@
-Mouse Control
-	left right click = left right eyes
+Mouse Control - Andrew and Edwin
+	left right click = left right eyes - done
 	spotlight
-LockDoor Dialogue
-Quit through front door
-Change blocks sprites in boss room
-endless hallway
-sound for key pickup
-double check dialogue cutoffs
-test z axis on multiple computers
-Colored eyes
 
-Statue ghosts - free spirit - not really
+LockDoor Dialogue - Andrew and Edwin
+
+Quit through front door - Andrew and Edwin
+
+Change blocks sprites in boss room - Harvey
+
+endless hallway - Andrew and Edwin
+
+sound for key pickup - Harvey
+
+double check dialogue cutoffs
+
+test z axis on multiple computers
+
+Colored eyes for statue ghosts - Andrew and Edwin
+Statue ghosts - free spirit - not really - Shaun
 
 Optional:
-Character Dark
-key shard diagram
-scummy statue 2 room switches
+Character Dark - Andrew and Edwin
+key shard diagram - Andrew and Edwin
+scummy statue 2 room switches - Andrew and Edwin
