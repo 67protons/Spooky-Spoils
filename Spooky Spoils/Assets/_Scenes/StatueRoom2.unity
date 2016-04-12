@@ -554,6 +554,7 @@ GameObject:
   - 95: {fileID: 312791935}
   - 114: {fileID: 312791938}
   - 114: {fileID: 312791934}
+  - 114: {fileID: 312791939}
   m_Layer: 0
   m_Name: Norm Statue
   m_TagString: Untagged
@@ -687,6 +688,19 @@ MonoBehaviour:
   isChasing: 1
   activated: 1
   anim: {fileID: 0}
+--- !u!114 &312791939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 312791933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!4 &334508952
 Transform:
   m_ObjectHideFlags: 0
@@ -1047,6 +1061,7 @@ GameObject:
   - 95: {fileID: 1066525629}
   - 114: {fileID: 1066525632}
   - 114: {fileID: 1066525628}
+  - 114: {fileID: 1066525633}
   m_Layer: 0
   m_Name: Pleb Statue
   m_TagString: Untagged
@@ -1180,6 +1195,19 @@ MonoBehaviour:
   isChasing: 1
   activated: 1
   anim: {fileID: 0}
+--- !u!114 &1066525633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1066525627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1001 &1090879052
 Prefab:
   m_ObjectHideFlags: 0
@@ -1547,6 +1575,7 @@ GameObject:
   - 95: {fileID: 1603917991}
   - 114: {fileID: 1603917994}
   - 114: {fileID: 1603917990}
+  - 114: {fileID: 1603917995}
   m_Layer: 0
   m_Name: Kawaii Statue
   m_TagString: Untagged
@@ -1680,6 +1709,19 @@ MonoBehaviour:
   isChasing: 1
   activated: 1
   anim: {fileID: 0}
+--- !u!114 &1603917995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1603917989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &1636655748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2049,7 @@ GameObject:
   - 95: {fileID: 1948686363}
   - 114: {fileID: 1948686366}
   - 114: {fileID: 1948686362}
+  - 114: {fileID: 1948686367}
   m_Layer: 0
   m_Name: Nerd Statue
   m_TagString: Untagged
@@ -2140,6 +2183,19 @@ MonoBehaviour:
   isChasing: 1
   activated: 1
   anim: {fileID: 0}
+--- !u!114 &1948686367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1948686361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!1 &2058177800
 GameObject:
   m_ObjectHideFlags: 0
