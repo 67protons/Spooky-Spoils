@@ -22,23 +22,32 @@ public class SpotlightManager : MonoBehaviour {
 
     void Update()
     {
-        var lastGazePoint = _gazePointDataComponent.LastGazePoint;
-
-        if (_userPresenceComponent.IsValid && _userPresenceComponent.IsUserPresent && lastGazePoint.IsValid)
+        if (InputManager.tobiiOn)
         {
-            var gazePointInScreenSpace = lastGazePoint.Screen;
-            var smoothedGazePoint = Smoothify(gazePointInScreenSpace);
+            var lastGazePoint = _gazePointDataComponent.LastGazePoint;
 
-            var gazePointInWorldSpace = Camera.main.ScreenToWorldPoint(
-                new Vector3(smoothedGazePoint.x, smoothedGazePoint.y, Camera.main.nearClipPlane));
+            if (_userPresenceComponent.IsValid && _userPresenceComponent.IsUserPresent && lastGazePoint.IsValid)
+            {
+                var gazePointInScreenSpace = lastGazePoint.Screen;
+                var smoothedGazePoint = Smoothify(gazePointInScreenSpace);
 
-            transform.position = gazePointInWorldSpace;
-            _lightComponent.enabled = true;
+                var gazePointInWorldSpace = Camera.main.ScreenToWorldPoint(
+                    new Vector3(smoothedGazePoint.x, smoothedGazePoint.y, Camera.main.nearClipPlane));
+
+                transform.position = gazePointInWorldSpace;
+                _lightComponent.enabled = true;
+            }
+            else
+            {
+                _lightComponent.enabled = false;
+                _hasHistoricPoint = false;
+            }
         }
         else
         {
-            _lightComponent.enabled = false;
-            _hasHistoricPoint = false;
+            Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            transform.position = mousePos;
+            _lightComponent.enabled = true;
         }
     }
 
