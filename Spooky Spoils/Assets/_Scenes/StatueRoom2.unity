@@ -551,7 +551,6 @@ GameObject:
   - 4: {fileID: 993279862}
   - 212: {fileID: 312791937}
   - 60: {fileID: 312791936}
-  - 95: {fileID: 312791935}
   - 114: {fileID: 312791938}
   - 114: {fileID: 312791934}
   - 114: {fileID: 312791939}
@@ -577,24 +576,6 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
---- !u!95 &312791935
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9580730, guid: 66762ca5a0e1e3443ac67e03d42601da,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 312791933}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6831f49f88beb67448a4c41410bccc3e, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!60 &312791936
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -684,10 +665,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1895ec0c9e312bb49b84f1f8b63bea47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neutralSprite: {fileID: 21300000, guid: b5d19698b8a61de4e8c37ee01b39b781, type: 3}
+  chasingSprite: {fileID: 21300000, guid: 05f78cf2d106e664e9e9d936d9434a25, type: 3}
   speed: 1
-  isChasing: 1
   activated: 1
-  anim: {fileID: 0}
 --- !u!114 &312791939
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1058,7 +1039,6 @@ GameObject:
   - 4: {fileID: 1821066495}
   - 212: {fileID: 1066525631}
   - 60: {fileID: 1066525630}
-  - 95: {fileID: 1066525629}
   - 114: {fileID: 1066525632}
   - 114: {fileID: 1066525628}
   - 114: {fileID: 1066525633}
@@ -1084,24 +1064,6 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
---- !u!95 &1066525629
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9513840, guid: 6df6b4155a11ebb4bb7a99bbd62bd7c1,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1066525627}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d2fa525842962a745963a6c4797c2701, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!60 &1066525630
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1191,10 +1153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1895ec0c9e312bb49b84f1f8b63bea47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neutralSprite: {fileID: 21300000, guid: c953ad9f4c6f7ee4697fc4d4607230c9, type: 3}
+  chasingSprite: {fileID: 21300000, guid: 0368d6739e1bcbf4d93e8ca5cb973eaa, type: 3}
   speed: 1
-  isChasing: 1
   activated: 1
-  anim: {fileID: 0}
 --- !u!114 &1066525633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1572,7 +1534,6 @@ GameObject:
   - 4: {fileID: 229515354}
   - 212: {fileID: 1603917993}
   - 60: {fileID: 1603917992}
-  - 95: {fileID: 1603917991}
   - 114: {fileID: 1603917994}
   - 114: {fileID: 1603917990}
   - 114: {fileID: 1603917995}
@@ -1598,24 +1559,6 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
---- !u!95 &1603917991
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9554348, guid: 4d70724fd48d8354383338c5e945a350,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1603917989}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: fe6c8363fcfa3844e991d55e1b539f3b, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!60 &1603917992
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1632,17 +1575,22 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: 0.23428571, y: -0.62}
-      - {x: 0.35428572, y: -0.23714286}
-      - {x: 0.37142858, y: -0.048571426}
-      - {x: 0.37142858, y: 0.3942857}
-      - {x: 0.35142857, y: 0.50285715}
-      - {x: 0.18285714, y: 0.6342857}
-      - {x: -0.108571425, y: 0.6342857}
-      - {x: -0.25714284, y: 0.56}
-      - {x: -0.29999998, y: 0.5}
-      - {x: -0.3257143, y: 0.25142857}
-      - {x: -0.3257143, y: 0.09428571}
-      - {x: -0.28, y: 0.09714285}
+      - {x: 0.42857143, y: 0.12}
+      - {x: 0.50857145, y: 0.22857143}
+      - {x: 0.50857145, y: 0.35428572}
+      - {x: 0.5057143, y: 0.36571428}
+      - {x: 0.47142857, y: 0.43714285}
+      - {x: 0.36285713, y: 0.43714285}
+      - {x: 0.27714285, y: 0.6342857}
+      - {x: -0.14285713, y: 0.6342857}
+      - {x: -0.25714284, y: 0.56285715}
+      - {x: -0.34, y: 0.44}
+      - {x: -0.46285713, y: 0.3942857}
+      - {x: -0.46285713, y: 0.26285714}
+      - {x: -0.41142857, y: 0.21142857}
+      - {x: -0.37142858, y: 0.12571429}
+      - {x: -0.36571428, y: 0.12}
+      - {x: -0.28, y: 0.12}
       - {x: -0.28, y: -0.21714285}
       - {x: -0.24, y: -0.26857144}
       - {x: -0.26, y: -0.61714286}
@@ -1705,10 +1653,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1895ec0c9e312bb49b84f1f8b63bea47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neutralSprite: {fileID: 21300000, guid: fbbede874a82a1c4e9151e09ae07901b, type: 3}
+  chasingSprite: {fileID: 21300000, guid: 36abeaea238fcba4892e8884d37df9d0, type: 3}
   speed: 1
-  isChasing: 1
   activated: 1
-  anim: {fileID: 0}
 --- !u!114 &1603917995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2046,7 +1994,6 @@ GameObject:
   - 4: {fileID: 334508952}
   - 212: {fileID: 1948686365}
   - 60: {fileID: 1948686364}
-  - 95: {fileID: 1948686363}
   - 114: {fileID: 1948686366}
   - 114: {fileID: 1948686362}
   - 114: {fileID: 1948686367}
@@ -2072,24 +2019,6 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
---- !u!95 &1948686363
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9525048, guid: b63cbf24225f2eb4893682cb28782bb7,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1948686361}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2379e08a919f93c41be08c1f2c7a00c4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!60 &1948686364
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2179,10 +2108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1895ec0c9e312bb49b84f1f8b63bea47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  neutralSprite: {fileID: 21300000, guid: 5ed50c2ad8cf1cd41bb0c644f287ea40, type: 3}
+  chasingSprite: {fileID: 21300000, guid: fa21b8869249402468f9c422acbc2188, type: 3}
   speed: 1
-  isChasing: 1
   activated: 1
-  anim: {fileID: 0}
 --- !u!114 &1948686367
 MonoBehaviour:
   m_ObjectHideFlags: 0

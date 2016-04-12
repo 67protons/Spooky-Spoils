@@ -3,40 +3,34 @@ using System.Collections;
 
 public class GhostStatue2 : Enemy {
 
+    public Sprite neutralSprite, chasingSprite;
     public float speed = 1f;
-    public bool isChasing = false;
+    //public bool isChasing = false;
     public bool activated = false;
-    public bool hasGaze
+    private bool hasGaze
     {
         get { return ((InputManager.tobiiOn && _gazeAware.HasGaze) || (!InputManager.tobiiOn && _mouseAware.HasMouse)); }
     }
     private GameObject player;
     private GazeAwareComponent _gazeAware;
     private MouseAwareComponent _mouseAware;
-    public Animator anim;
+    private SpriteRenderer _spriteRenderer;
+    //public Animator anim;
 
     void Awake()
     {
         _gazeAware = this.GetComponent<GazeAwareComponent>();
         _mouseAware = this.GetComponent<MouseAwareComponent>();
         player = GameObject.FindGameObjectWithTag("Player");
-        anim = this.GetComponent<Animator>();
+        _spriteRenderer = this.GetComponent<SpriteRenderer>();
+        //anim = this.GetComponent<Animator>();
     }
 
     void Update()
     {
         if (activated)
         {
-            checkState();
-            if (!this.hasGaze)
-            {
-                if (isChasing)
-                {
-                    float step = speed * Time.deltaTime;
-                    this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
-                }
-            }
-
+            checkState();           
         }
     }
 
@@ -44,16 +38,13 @@ public class GhostStatue2 : Enemy {
     {
         if (!this.hasGaze)
         {
-            if (isChasing)
-            {
-                anim.SetBool("isAttacking", true);
-                anim.Play("StatueAttack");
-            }
+            float step = speed * Time.deltaTime;
+            this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
+            _spriteRenderer.sprite = chasingSprite;
         }
-       
-        else
+        else if (this.hasGaze)
         {
-            anim.SetBool("isAttacking", false);
+            _spriteRenderer.sprite = neutralSprite;
         }
     }
 }
