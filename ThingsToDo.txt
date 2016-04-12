@@ -3,7 +3,7 @@ TO-DO:
 2. Statue ghosts - free spirit - not really - Shaun
 3. LockDoor Dialogue - Andrew and Edwin
 4. Quit through front door - Andrew and Edwin
-5. Colored eyes for statue ghosts - Andrew and Edwin
+
 
 
 Testing:
@@ -23,3 +23,4 @@ sound for key pickup - Harvey - done
 Mouse Control - Andrew and Edwin
 	left right click = left right eyes - done
 	spotlight - done
+Colored eyes for statue ghosts - Andrew and Edwin - Done
