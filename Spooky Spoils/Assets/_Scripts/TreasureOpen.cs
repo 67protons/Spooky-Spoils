@@ -3,6 +3,7 @@ using System.Collections;
 
 public class TreasureOpen : MonoBehaviour {
     public Sprite opened;
+    private bool activated = false;
     private DialogueManager _dialogueManager;
     private TextAsset _chaseEnd;
 
@@ -17,7 +18,9 @@ public class TreasureOpen : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             this.GetComponent<SpriteRenderer>().sprite = opened;
-            _dialogueManager.StartDialogue(_chaseEnd);
+            if (!activated)
+                _dialogueManager.StartDialogue(_chaseEnd);
+            activated = true;
         }            
     }
 }
