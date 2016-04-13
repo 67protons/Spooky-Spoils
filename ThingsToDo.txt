@@ -3,19 +3,25 @@ TO-DO:
 2. Statue ghosts - free spirit - not really - Shaun
 3. LockDoor Dialogue - Andrew and Edwin
 4. Quit through front door - Andrew and Edwin
-5. Colored eyes for statue ghosts - Andrew and Edwin
+5. Box room - barrel still allows keypickup
+6. find error when loading box room
+	6a.touching statue room door in foyer 2
+7. Do Report
+8. Make Video
+9. on screen button for hints
 
+Things to note:
+Wang tried to take barrel elsewhere thinking to other games where you have to move it to a specific spot
+Maybe add reset button
 
 Testing:
 1. double check dialogue cutoffs
 2. test z axis on multiple computers
 
-
 Optional:
 Character Dark - Andrew and Edwin
 key shard diagram - Andrew and Edwin
 scummy statue 2 room switches - Andrew and Edwin
-
 
 DONE:
 Change blocks sprites in boss room - Harvey - done
@@ -23,3 +29,4 @@ sound for key pickup - Harvey - done
 Mouse Control - Andrew and Edwin
 	left right click = left right eyes - done
 	spotlight - done
+Colored eyes for statue ghosts - Andrew and Edwin - Done
