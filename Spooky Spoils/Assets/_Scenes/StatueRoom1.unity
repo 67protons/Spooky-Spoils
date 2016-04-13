@@ -146,6 +146,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 607834dece0540c4683d291811354d19, type: 2}
+    - target: {fileID: 11400460, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
+      propertyPath: returnScene
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
@@ -639,6 +643,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 607834dece0540c4683d291811354d19, type: 2}
+    - target: {fileID: 11400460, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
+      propertyPath: returnScene
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
@@ -752,6 +760,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasMouse: 0
   projectedBounds: {x: 1, y: 1}
+--- !u!114 &364688739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 364688731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861786a747fe54a42801fbab0ab91124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &376894145
 Prefab:
   m_ObjectHideFlags: 0
@@ -1028,6 +1047,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasMouse: 0
   projectedBounds: {x: 1, y: 1}
+--- !u!114 &955737086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 955737079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861786a747fe54a42801fbab0ab91124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &993279861
 Prefab:
   m_ObjectHideFlags: 0
@@ -1146,6 +1176,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 607834dece0540c4683d291811354d19, type: 2}
+    - target: {fileID: 11400460, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
+      propertyPath: returnScene
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
   m_IsPrefabParent: 0
@@ -1170,6 +1204,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasMouse: 0
   projectedBounds: {x: 1, y: 1}
+--- !u!114 &1055483188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1055483181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861786a747fe54a42801fbab0ab91124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1095252119
 GameObject:
   m_ObjectHideFlags: 0
@@ -1337,6 +1382,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 607834dece0540c4683d291811354d19, type: 2}
+    - target: {fileID: 11400460, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
+      propertyPath: returnScene
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
@@ -1839,6 +1888,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HasMouse: 0
   projectedBounds: {x: 1, y: 1}
+--- !u!114 &1706431485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706431478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861786a747fe54a42801fbab0ab91124, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1800938999
 GameObject:
   m_ObjectHideFlags: 0

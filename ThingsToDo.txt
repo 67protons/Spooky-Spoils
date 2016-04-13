@@ -5,6 +5,8 @@ TO-DO:
 3. Make Video
 4. on screen button for hints
 5. Fix Player anims
+6. add music throughout game (Especially boss rooms)
+7. add boss sound effects
 
 Things to note:
 Wang tried to take barrel elsewhere thinking to other games where you have to move it to a specific spot
@@ -15,9 +17,8 @@ Testing:
 2. test z axis on multiple computers
 
 Optional:
-Character Dark - Andrew
 key shard diagram - Andrew and Edwin
-scummy statue 2 room switches - Andrew and Edwin
+
 
 DONE:
 Change blocks sprites in boss room - Harvey - done
@@ -31,3 +32,5 @@ Statue ghosts - free spirit - not really - Shaun - done
 LockDoor Dialogue - Edwin - done
 Quit through front door - Edwin - Done
 Box room - barrel still allows keypickup - Edwin - Done
+scummy statue 2 room switches - Andrew - done
+Character Dark - Andrew - Done
