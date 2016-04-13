@@ -38,12 +38,14 @@ public class GhostStatue2 : Enemy {
     {
         if (!this.hasGaze)
         {
+            this.GetComponent<Collider2D>().isTrigger = true;
             float step = speed * Time.deltaTime;
             this.transform.position = Vector3.MoveTowards(this.transform.position, player.transform.position, step);
             _spriteRenderer.sprite = chasingSprite;
         }
         else if (this.hasGaze)
         {
+            this.GetComponent<Collider2D>().isTrigger = false;
             _spriteRenderer.sprite = neutralSprite;
         }
     }

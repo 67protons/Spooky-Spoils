@@ -40,12 +40,14 @@ public class GhostStatue : Enemy {
     {
         if (isChasing)
         {
+            this.GetComponent<Collider2D>().isTrigger = true;
             anim.SetBool("isAttacking", true);
             anim.Play("StatueAttack");
         }
         else
         {
             anim.SetBool("isAttacking", false);
+            this.GetComponent<Collider2D>().isTrigger = false;
         }
     }
 
