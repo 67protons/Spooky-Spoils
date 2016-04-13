@@ -215,12 +215,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomBegin
-      value: Whitley_Begin
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: ebb8a5831143526419d48e1b94854814, type: 3}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomHint
-      value: Whitley_Hints
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: 03408884fd14bf04086f0e8794f5c36b, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
   m_IsPrefabParent: 0
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330dfe2313c91ac4f8661ebae5935778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: Whitley_End
+  roomEnd: {fileID: 4900000, guid: 80d036be58a6fa64c9c04e8fec001f4b, type: 3}
   enemies:
   - {fileID: 632254656}
 --- !u!114 &504385604

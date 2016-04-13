@@ -459,12 +459,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomBegin
-      value: Flashlight_Begin
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: 57fa5f2250d012f499e8656e1e7d3df2, type: 3}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomHint
-      value: Flashlight_Hints
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: fd2c8f5b14700394dae276eb0dae02ed, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
   m_IsPrefabParent: 0
@@ -681,7 +681,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330dfe2313c91ac4f8661ebae5935778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: Flashlight_End
+  roomEnd: {fileID: 4900000, guid: 7548cd0159ecd35459b0f065a04c8e88, type: 3}
   enemies: []
 --- !u!114 &1822383790
 MonoBehaviour:
