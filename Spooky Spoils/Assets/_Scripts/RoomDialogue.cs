@@ -13,14 +13,14 @@ public class RoomDialogue : MonoBehaviour {
     void Start()
     {
         if (roomBegin != null)
-            _dialogueManager.StartDialogue(roomBegin.text);   
+            _dialogueManager.StartDialogue(roomBegin);   
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Q) && roomHint != null)
         {
-            _dialogueManager.StartDialogue(roomHint.text);
+            _dialogueManager.StartDialogue(roomHint);
         }
     }
 }

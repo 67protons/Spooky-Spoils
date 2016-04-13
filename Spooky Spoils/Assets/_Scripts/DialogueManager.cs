@@ -10,6 +10,7 @@ public class DialogueManager : MonoBehaviour {
     private Text _textBox;
     private int _dialogueIndex = 0;
     private string[] _dialogueList;
+    private TextAsset _currentTextfile;
 
     void Awake()
     {
@@ -18,14 +19,20 @@ public class DialogueManager : MonoBehaviour {
         _dialoguePanel.SetActive(false);
     }   	
 			
-    public void StartDialogue(string textFile)
+    public void StartDialogue(TextAsset textFile)
     {
-        //_dialogueList = File.ReadAllText("Assets\\_Dialogues\\" + filename + ".txt").Split('|');   
-        _dialogueList = textFile.Split('|');
-        EnableDialoguePanel();
+        Time.timeScale = 0;
+        _currentTextfile = textFile;
+
+        string text = _currentTextfile.text;
+        _dialogueList = text.Split('|');
+
+        if (_currentTextfile.name == "Quit")
+            EnableDialoguePanel(true);
+        else
+            EnableDialoguePanel(false);
         _dialogueIndex = 0;
         PrintToDialogueBox();
-        Time.timeScale = 0;
     }
 
     void Update()
@@ -41,11 +48,21 @@ public class DialogueManager : MonoBehaviour {
     {
         _dialogueIndex++;
         if (_dialogueIndex >= _dialogueList.Length){
+            if (_currentTextfile.name == "Quit")
+            {
+                Application.LoadLevel("MainMenu");
+            }
             _dialoguePanel.SetActive(false);
             Time.timeScale = 1;
         }            
         else
             PrintToDialogueBox();
+    }
+
+    public void CancelDialogue()
+    {
+        _dialoguePanel.SetActive(false);
+        Time.timeScale = 1;
     }
 
     private void PrintToDialogueBox()
@@ -58,9 +75,5 @@ public class DialogueManager : MonoBehaviour {
         _dialoguePanel.SetActive(true);
         _textBox = _dialoguePanel.transform.FindChild("Text").GetComponent<Text>();
         _cancelButton.SetActive(withCancel);
-        //if (!withCancel)
-        //{
-        //    _cancelButton.SetActive(false);
-        //}
     }
 }
