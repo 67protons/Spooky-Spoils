@@ -717,7 +717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330dfe2313c91ac4f8661ebae5935778, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: Statues_End
+  roomEnd: {fileID: 4900000, guid: 668cd4195b020f14f89f8a3ee29ccb00, type: 3}
   enemies:
   - {fileID: 1860249835}
   - {fileID: 121071881}
@@ -1519,12 +1519,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomBegin
-      value: Statues_Begin
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: 92e9c6ce1c72c7a4986c7e7f0621b633, type: 3}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomHint
-      value: Statues_Hints
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: 84cea1339b7be6e47976388493735b43, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
   m_IsPrefabParent: 0

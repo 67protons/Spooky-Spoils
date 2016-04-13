@@ -1339,12 +1339,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomBegin
-      value: Blackbourne_Begin
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: c69ff4d086f3c174085cea09d5d5ccc5, type: 3}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomHint
-      value: Blackbourne_Hints
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: 31b9e9dd1de5b8a4a9028c9ba3c19be1, type: 3}
     - target: {fileID: 101440, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: m_IsActive
       value: 1

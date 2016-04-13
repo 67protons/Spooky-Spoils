@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class LevelEnd : MonoBehaviour {
-    public string filename;
+    //public string filename;
+    public TextAsset roomEnd;
     public Enemy[] enemies;
     private DialogueManager _dialogueManager;
 
@@ -19,7 +20,7 @@ public class LevelEnd : MonoBehaviour {
             foreach (Enemy enemyScript in enemies){
                 enemyScript.Stop();
             }
-            _dialogueManager.StartDialogue(filename);
+            _dialogueManager.StartDialogue(roomEnd.text);
         }
     }
 }

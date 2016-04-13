@@ -1871,12 +1871,12 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomBegin
-      value: Chase_Begin
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: 8900c2918b231bc4b9e79ccf0dd69d14, type: 3}
     - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
       propertyPath: roomHint
-      value: Chase_Hints
-      objectReference: {fileID: 0}
+      value: 
+      objectReference: {fileID: 4900000, guid: acb5de2131fbbe64fb94523ad84456f9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
   m_IsPrefabParent: 0

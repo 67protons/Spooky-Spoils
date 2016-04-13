@@ -2,8 +2,7 @@
 using System.Collections;
 
 public class RoomDialogue : MonoBehaviour {
-    public string roomBegin = "";    
-    public string roomHint = "";
+    public TextAsset roomBegin, roomHint;    
     private DialogueManager _dialogueManager;    
 
     void Awake()
@@ -13,15 +12,15 @@ public class RoomDialogue : MonoBehaviour {
 
     void Start()
     {
-        if (roomBegin != "")
-            _dialogueManager.StartDialogue(roomBegin);   
+        if (roomBegin != null)
+            _dialogueManager.StartDialogue(roomBegin.text);   
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && roomHint != "")
+        if (Input.GetKeyDown(KeyCode.Q) && roomHint != null)
         {
-            _dialogueManager.StartDialogue(roomHint);
+            _dialogueManager.StartDialogue(roomHint.text);
         }
     }
 }
