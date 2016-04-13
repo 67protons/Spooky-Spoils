@@ -201,8 +201,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 230486091}
   - 212: {fileID: 230486094}
-  - 61: {fileID: 230486093}
   - 114: {fileID: 230486092}
+  - 61: {fileID: 230486093}
   m_Layer: 0
   m_Name: Wheatly_Senpai
   m_TagString: FakeCrate
@@ -217,7 +217,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 230486090}
   m_LocalRotation: {x: -0.4999999, y: -0.50000006, z: 0.49999988, w: -0.5000002}
-  m_LocalPosition: {x: 2.3, y: 0.5, z: -0.7}
+  m_LocalPosition: {x: 2.3, y: 0.5, z: -1.41}
   m_LocalScale: {x: 0.14999998, y: 0.29999992, z: 1}
   m_Children: []
   m_Father: {fileID: 1932605047}
@@ -245,9 +245,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: -0.0000009536743, y: 0.00000047683716}
+  m_Offset: {x: 0, y: 0.00000047683716}
   serializedVersion: 2
-  m_Size: {x: 6.399999, y: 3.1999996}
+  m_Size: {x: 9.142857, y: 4.571429}
 --- !u!212 &230486094
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -448,8 +448,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 717764105}
   m_LocalRotation: {x: 0.000000115202326, y: -0.7071067, z: 0.7071068, w: -0.00000011520231}
-  m_LocalPosition: {x: 2.8, y: 0.5, z: -0.7}
-  m_LocalScale: {x: 1, y: 0.50000006, z: 1}
+  m_LocalPosition: {x: 2.8, y: 0.5, z: -1.41}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1932605047}
   m_RootOrder: 2
@@ -827,8 +827,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 990776919}
   m_LocalRotation: {x: 0.000000115202326, y: -0.7071067, z: 0.7071068, w: -0.00000011520231}
-  m_LocalPosition: {x: 2.7799997, y: 0.5000007, z: -0.69}
-  m_LocalScale: {x: 1, y: 0.50000006, z: 1}
+  m_LocalPosition: {x: 2.8, y: 0.5, z: -1.4}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5707236}
   m_RootOrder: 2
@@ -996,7 +996,7 @@ Transform:
   m_GameObject: {fileID: 1222088130}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
   m_LocalPosition: {x: -2.92, y: 1.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.67, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 389433641}
   m_RootOrder: 1
@@ -1153,8 +1153,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 1489006350}
   - 212: {fileID: 1489006353}
-  - 61: {fileID: 1489006352}
   - 114: {fileID: 1489006351}
+  - 61: {fileID: 1489006352}
   m_Layer: 0
   m_Name: Wheatly_Senpai
   m_TagString: FakeCrate
@@ -1169,7 +1169,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1489006349}
   m_LocalRotation: {x: -0.4999999, y: -0.50000006, z: 0.49999988, w: -0.5000002}
-  m_LocalPosition: {x: 2.3, y: 0.5, z: -0.7}
+  m_LocalPosition: {x: 2.3, y: 0.5, z: -1.41}
   m_LocalScale: {x: 0.14999998, y: 0.29999992, z: 1}
   m_Children: []
   m_Father: {fileID: 5707236}
@@ -1199,7 +1199,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: -0.0000009536743, y: 0.00000047683716}
   serializedVersion: 2
-  m_Size: {x: 6.399999, y: 3.1999996}
+  m_Size: {x: 9.142857, y: 4.571429}
 --- !u!212 &1489006353
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1254,7 +1254,7 @@ Transform:
   m_GameObject: {fileID: 1726158631}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
   m_LocalPosition: {x: -2.92, y: 1.74, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.67, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 703462216}
   m_RootOrder: 1
@@ -1403,7 +1403,7 @@ Transform:
   m_GameObject: {fileID: 1955447743}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
   m_LocalPosition: {x: -2.92, y: -10.8, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.19, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 389433641}
   m_RootOrder: 2
@@ -1445,7 +1445,7 @@ Transform:
   m_GameObject: {fileID: 2041650618}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071067}
   m_LocalPosition: {x: -2.92, y: -10.8, z: -0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.19, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 703462216}
   m_RootOrder: 2
