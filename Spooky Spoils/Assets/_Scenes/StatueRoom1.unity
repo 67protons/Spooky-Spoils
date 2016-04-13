@@ -538,6 +538,10 @@ Prefab:
       propertyPath: showProjectedBounds
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 21277660, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 813234319
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
   m_IsPrefabParent: 0
@@ -677,6 +681,10 @@ Prefab:
     - target: {fileID: 172142, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 21273538, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 813234319
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
@@ -1054,6 +1062,10 @@ Prefab:
     - target: {fileID: 145682, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 21250312, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 813234319
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
@@ -1957,6 +1969,10 @@ Prefab:
     - target: {fileID: 102042, guid: 6df6b4155a11ebb4bb7a99bbd62bd7c1, type: 2}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 21270916, guid: 6df6b4155a11ebb4bb7a99bbd62bd7c1, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 813234319
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df6b4155a11ebb4bb7a99bbd62bd7c1, type: 2}
