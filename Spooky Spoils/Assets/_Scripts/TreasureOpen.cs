@@ -17,7 +17,7 @@ public class TreasureOpen : MonoBehaviour {
         if (other.gameObject.CompareTag("Player"))
         {
             this.GetComponent<SpriteRenderer>().sprite = opened;
-            _dialogueManager.StartDialogue(_chaseEnd.text);
+            _dialogueManager.StartDialogue(_chaseEnd);
         }            
     }
 }

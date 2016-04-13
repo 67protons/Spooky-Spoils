@@ -854,6 +854,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1927126638}
   - 61: {fileID: 1927126637}
+  - 114: {fileID: 1927126639}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -887,6 +888,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
+--- !u!114 &1927126639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1927126636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9618fdd9c8955f641a15a29b12b5e447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1960428475
 GameObject:
   m_ObjectHideFlags: 0
@@ -968,10 +980,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
-      propertyPath: roomBegin
-      value: 
-      objectReference: {fileID: 4900000, guid: 67c02cab7b248ca469a404661d6991d2, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
   m_IsPrefabParent: 0

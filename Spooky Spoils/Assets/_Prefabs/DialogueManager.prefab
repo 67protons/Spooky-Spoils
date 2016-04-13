@@ -290,8 +290,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4faaab78cd3dade48a6180fa5a888d5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomBegin: Chase_Begin
-  roomHint: Chase_Hints
+  roomBegin: {fileID: 4900000, guid: 67c02cab7b248ca469a404661d6991d2, type: 3}
+  roomHint: {fileID: 0}
 --- !u!114 &11457380
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -419,7 +419,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11460428}
-        m_MethodName: AdvanceDialogue
+        m_MethodName: CancelDialogue
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

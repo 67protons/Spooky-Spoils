@@ -12,7 +12,6 @@ public class BlockPuzzleManager : MonoBehaviour {
     private GameObject[] fakeCrates;
     private float _activatedRenderTime = 0f;
     private float _deactivatedRenderTime = 0f;
-    private bool leftMouseDown = false, rightMouseDown = false;
 
     void Awake()
     {
@@ -26,19 +25,9 @@ public class BlockPuzzleManager : MonoBehaviour {
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Mouse0))
-        //    leftMouseDown = true;
-        //else if (Input.GetKeyUp(KeyCode.Mouse0))
-        //    leftMouseDown = false;
-        //if (Input.GetKeyDown(KeyCode.Mouse1))
-        //    rightMouseDown = true;
-        //else if (Input.GetKeyUp(KeyCode.Mouse1))
-        //    rightMouseDown = false;
-
         EyeXEyePosition eyePosition = _eyePositionDataComponent.LastEyePosition;
         if (eyePosition != null)
-        {
-            //Debug.Log(Input.GetKey(KeyCode.Mouse0));
+        {     
             if ((InputManager.tobiiOn && (eyePosition.LeftEye.IsValid ^ eyePosition.RightEye.IsValid)) || 
                 (!InputManager.tobiiOn && (Input.GetKey(KeyCode.Mouse0) ^ Input.GetKey(KeyCode.Mouse1))))
             {                

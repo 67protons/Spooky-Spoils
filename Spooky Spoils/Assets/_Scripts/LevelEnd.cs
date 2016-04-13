@@ -20,7 +20,7 @@ public class LevelEnd : MonoBehaviour {
             foreach (Enemy enemyScript in enemies){
                 enemyScript.Stop();
             }
-            _dialogueManager.StartDialogue(roomEnd.text);
+            _dialogueManager.StartDialogue(roomEnd);
         }
     }
 }
