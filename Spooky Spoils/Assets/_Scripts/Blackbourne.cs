@@ -30,7 +30,7 @@ public class Blackbourne : Enemy {
         if (cooldownCounter <= 0)
         {
             Vector2 direction = _playerObject.transform.position - this.transform.position;
-            GameObject newProjectile = (GameObject)Instantiate(projectile);
+            GameObject newProjectile = (GameObject)Instantiate(projectile, this.transform.position, new Quaternion());
             newProjectile.GetComponent<Rigidbody2D>().AddForce(direction.normalized * 100f);
             _projectileList.Add(newProjectile);
             Destroy(newProjectile, 10f);

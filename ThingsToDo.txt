@@ -5,10 +5,11 @@ TO-DO:
 4. Quit through front door - Andrew and Edwin
 5. Box room - barrel still allows keypickup
 6. find error when loading box room
-	6a.touching statue room door in foyer 2
+	6a.touching statue room door in foyer 
 7. Do Report
 8. Make Video
 9. on screen button for hints
+10. Fix Player anims
 
 Things to note:
 Wang tried to take barrel elsewhere thinking to other games where you have to move it to a specific spot
