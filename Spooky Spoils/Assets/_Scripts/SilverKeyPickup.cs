@@ -19,9 +19,13 @@ public class SilverKeyPickup : KeyPickup
     public override void OnTriggerEnter2D(Collider2D other)
     {
         base.OnTriggerEnter2D(other);
-        foreach (GameObject invisBlock in _invisibleBlocks)
+        if (other.CompareTag("Player"))
         {
-            invisBlock.SetActive(false);
-        }
+            Debug.Log("Touch my body");
+            foreach (GameObject invisBlock in _invisibleBlocks)
+            {
+                invisBlock.SetActive(false);
+            }
+        }        
     }
 }

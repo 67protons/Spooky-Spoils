@@ -1,3 +1,8 @@
 
 YOU:
 It's locked. I'm sure there's a way to unlock it.
+|
+...
+|
+YOU:
+I don't have the key to this room yet.
