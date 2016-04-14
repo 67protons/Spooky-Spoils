@@ -7,6 +7,7 @@ TO-DO:
 5. Fix Player anims
 6. add music throughout game (Especially boss rooms)
 7. add boss sound effects
+8. exit button not working properly
 
 Things to note:
 Wang tried to take barrel elsewhere thinking to other games where you have to move it to a specific spot
@@ -34,3 +35,4 @@ Quit through front door - Edwin - Done
 Box room - barrel still allows keypickup - Edwin - Done
 scummy statue 2 room switches - Andrew - done
 Character Dark - Andrew - Done
+toggle Fix - Andrew - Done

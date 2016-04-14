@@ -374,6 +374,7 @@ GameObject:
   m_Component:
   - 224: {fileID: 866281157}
   - 114: {fileID: 866281158}
+  - 114: {fileID: 866281159}
   m_Layer: 5
   m_Name: TobiiToggle
   m_TagString: Untagged
@@ -443,9 +444,9 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 228983300}
-        m_MethodName: TobiiOn
-        m_Mode: 6
+      - m_Target: {fileID: 866281159}
+        m_MethodName: toggle
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -453,10 +454,21 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 1
+--- !u!114 &866281159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 866281156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10110e3ddb820cf4095c6f9fe74bd3a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1100412156
 GameObject:
   m_ObjectHideFlags: 0
