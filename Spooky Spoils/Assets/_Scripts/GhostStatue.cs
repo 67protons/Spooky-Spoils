@@ -15,12 +15,15 @@ public class GhostStatue : Enemy {
     private MouseAwareComponent _mouseAware;
     public Animator anim;
 
+    private AudioSource audioClip;
+
     void Awake()
     {
         _gazeAware = this.GetComponent<GazeAwareComponent>();
         _mouseAware = this.GetComponent<MouseAwareComponent>();
         player = GameObject.FindGameObjectWithTag("Player");
         anim = this.GetComponent<Animator>();
+        audioClip = this.GetComponent<AudioSource>();
     }
 
     void Update()
@@ -42,10 +45,16 @@ public class GhostStatue : Enemy {
         {
             anim.SetBool("isAttacking", true);
             anim.Play("StatueAttack");
+            if(audioClip != null && !audioClip.isPlaying)
+            {
+                audioClip.PlayOneShot(audioClip.clip);
+            }
         }
         else
         {
             anim.SetBool("isAttacking", false);
+            if(audioClip != null)
+                audioClip.Stop();
         }
     }
 
