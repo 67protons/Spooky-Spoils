@@ -5,6 +5,7 @@ public class KeyShards : MonoBehaviour{
     public GameObject correspondingKey;
     private GazeAwareComponent _gazeAware;
     private MouseAwareComponent _mouseAware;
+    private AudioSource audioClip;
     private bool HasGaze
     {
         get { return ((InputManager.tobiiOn && _gazeAware.HasGaze) || (!InputManager.tobiiOn && _mouseAware.HasMouse)); }
@@ -14,6 +15,7 @@ public class KeyShards : MonoBehaviour{
     {
         _gazeAware = this.GetComponent<GazeAwareComponent>();
         _mouseAware = this.GetComponent<MouseAwareComponent>();
+        audioClip = this.GetComponentInParent<AudioSource>();
     }
 
     void Start()
@@ -33,8 +35,10 @@ public class KeyShards : MonoBehaviour{
     {
         if (other.tag == "Player")
         {
+            audioClip.PlayOneShot(audioClip.clip);
             if (this.correspondingKey.gameObject != null)
                 correspondingKey.SetActive(true);
+           
             Destroy(this.gameObject);
         }
     }
