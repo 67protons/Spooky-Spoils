@@ -1,0 +1,23 @@
+sound sources: freesound.org under creative commons
+
+204106__edtijo__creepy-horror-ambiant.wav Title: Creepy Horror Ambiant Artist: edtijo
+gate-latch.wav Title: Gate Latch Artist: mhtaylor67
+39026__wildweasel__keypickup.wav Title: KeyPickup.wav Artist: wildweasel
+pushing_barrel.wav Title: Horror SFX 2 Artists: Thomas LaMusga Album: Horror SFX
+321086__benagain__open-door-1.wav Title: Open Door #1 Artists: Benagain 
+278995__limitsnap-creations__creepy-build-up-tone.wav Title: Creepy build up tone Artist: LimitSnap_Creations
+182756__romsandrious__mooved-chair-on-marble.wav Title: Mooved chair on marble.wav Artist: romsandrious
+267636__brainclaim__saw-cutting.wav Title: Saw Cutting Artist: BrainClaim
+341807__undead505__some-background-i-made-for-my-game-ambient-music.mp3 Title: Some Background I made for my game Ambient Music Artist: undead505
+
+not using BELOW
+
+Title: marble.wav Artist: jradcoolness
+Title: Barrel Breaking Artist: kevinkace
+
+door_open.wav - delete
+key_pickup.wav - replace
+statue_ghost2.wav - delete
+
+
+
