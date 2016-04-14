@@ -43,6 +43,7 @@ public class GhostStatue : Enemy {
     {
         if (isChasing)
         {
+            this.GetComponent<Collider2D>().isTrigger = true;
             anim.SetBool("isAttacking", true);
             anim.Play("StatueAttack");
             if(audioClip != null && !audioClip.isPlaying)
@@ -53,8 +54,12 @@ public class GhostStatue : Enemy {
         else
         {
             anim.SetBool("isAttacking", false);
+//<<<<<<< HEAD
             if(audioClip != null)
                 audioClip.Stop();
+//=======
+            this.GetComponent<Collider2D>().isTrigger = false;
+//>>>>>>> 2936f90d086986271e11ad5a966ea3255bf52465
         }
     }
 

@@ -14,4 +14,12 @@ public class Enemy : MonoBehaviour {
             Application.LoadLevel(Application.loadedLevel);
         }
     }
+
+    public virtual void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Application.LoadLevel(Application.loadedLevel);
+        }
+    }
 }
