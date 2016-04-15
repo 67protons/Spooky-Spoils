@@ -20,7 +20,7 @@ public class RoomDialogue : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Q) && roomHint != null)
         {
-            if (InputManager.tobiiOn)
+            if (InputManager.tobiiOn || roomHintAlternate == null)
                 _dialogueManager.StartDialogue(roomHint);
 
             else
