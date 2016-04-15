@@ -6,6 +6,7 @@ public class MenuCursor : MonoBehaviour {
 
     public GameObject PlayButton;
     public GameObject ExitButton;
+    private bool PlayBool = false;
     private Vector3 playOffset;
     private Vector3 exitOffset;
 
@@ -14,6 +15,7 @@ public class MenuCursor : MonoBehaviour {
         playOffset = PlayButton.transform.position;
         exitOffset = ExitButton.transform.position;
         transform.position = playOffset;
+        PlayBool = true;
     }
 	
 	// Update is called once per frame
@@ -23,23 +25,30 @@ public class MenuCursor : MonoBehaviour {
         playOffset = PlayButton.transform.position;
         exitOffset = ExitButton.transform.position;
 
+
+
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             SoundManager.instance.PlaySFX(SoundManager.instance.sfxClips[0]);
-            if (transform.position == playOffset)
+            if (PlayBool)
                 Application.LoadLevel("Foyer1");
-            if (transform.position == exitOffset)
+            if (!PlayBool)
+            {
+                Debug.Log("Quit");
                 Application.Quit();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.W))
         {
+            PlayBool = true;
             this.transform.position =  playOffset;
             SoundManager.instance.PlaySFX(SoundManager.instance.sfxClips[1]);
             
         }
         if(Input.GetKeyDown(KeyCode.S))
         {
+            PlayBool = false;
             this.transform.position = exitOffset;
             SoundManager.instance.PlaySFX(SoundManager.instance.sfxClips[1]);
         }
