@@ -33,7 +33,7 @@ EditorBuildSettings:
     path: Assets/_Scenes/Foyer5.unity
   - enabled: 1
     path: Assets/_Scenes/BossRoom2.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/SoundTest.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/SoundTest2.unity
