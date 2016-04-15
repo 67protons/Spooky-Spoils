@@ -225,6 +225,10 @@ Prefab:
       propertyPath: roomHint
       value: 
       objectReference: {fileID: 4900000, guid: 03408884fd14bf04086f0e8794f5c36b, type: 3}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomHintAlternate
+      value: 
+      objectReference: {fileID: 4900000, guid: 51422d39e7d24f74c90bf5cc1d1c38f4, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
   m_IsPrefabParent: 0

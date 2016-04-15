@@ -930,6 +930,56 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 24.27, y: 2.09}
+--- !u!1001 &1154735965
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 466668, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomHint
+      value: 
+      objectReference: {fileID: 4900000, guid: baa9af52530f0f148bc8daaa1442ef60, type: 3}
+    - target: {fileID: 11444234, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+      propertyPath: roomBegin
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6b04fbfc0e545f147a4123fbb2f9f1e3, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1178382580
 GameObject:
   m_ObjectHideFlags: 0

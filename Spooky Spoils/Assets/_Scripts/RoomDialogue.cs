@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class RoomDialogue : MonoBehaviour {
-    public TextAsset roomBegin, roomHint;    
+    public TextAsset roomBegin, roomHint, roomHintAlternate;    
     private DialogueManager _dialogueManager;    
 
     void Awake()
@@ -20,7 +20,13 @@ public class RoomDialogue : MonoBehaviour {
     {
         if (Input.GetKeyDown(KeyCode.Q) && roomHint != null)
         {
-            _dialogueManager.StartDialogue(roomHint);
+            if (InputManager.tobiiOn)
+                _dialogueManager.StartDialogue(roomHint);
+
+            else
+            {
+                _dialogueManager.StartDialogue(roomHintAlternate);
+            }
         }
     }
 }
