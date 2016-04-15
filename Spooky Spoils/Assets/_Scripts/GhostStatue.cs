@@ -66,6 +66,7 @@ public class GhostStatue : Enemy {
     public override void Stop()
     {
         this.activated = false;
+        this.GetComponent<Collider2D>().isTrigger = false;
         anim.SetBool("isAttacking", false);
     }
 }

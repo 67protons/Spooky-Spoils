@@ -2,5 +2,5 @@
 using System.Collections;
 
 public class InputManager : MonoBehaviour {
-    public static bool tobiiOn = false;
+    public static bool tobiiOn = true;
 }

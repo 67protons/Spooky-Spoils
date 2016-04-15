@@ -23,7 +23,7 @@ public class MenuCursor : MonoBehaviour {
         playOffset = PlayButton.transform.position;
         exitOffset = ExitButton.transform.position;
 
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
         {
             SoundManager.instance.PlaySFX(SoundManager.instance.sfxClips[0]);
             if (transform.position == playOffset)
@@ -45,9 +45,4 @@ public class MenuCursor : MonoBehaviour {
         }
 
 	}
-
-    public void TobiiOn(bool activated)
-    {
-        InputManager.tobiiOn = activated;
-    }
 }

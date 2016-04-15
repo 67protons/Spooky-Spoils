@@ -1,12 +1,13 @@
 TO-DO:
-1. find error when loading box room
-	6a.touching statue room door in foyer 
 2. Do Report
 3. Make Video
 4. on screen button for hints
 5. Fix Player anims
 6. add music throughout game (Especially boss rooms)
 7. add boss sound effects
+8. exit button not working properly
+9. Mouse toggle sometimes doesn't work
+10. Add dialogue to stairwell and hallway2 and left right click
 
 Things to note:
 Wang tried to take barrel elsewhere thinking to other games where you have to move it to a specific spot
@@ -34,3 +35,4 @@ Quit through front door - Edwin - Done
 Box room - barrel still allows keypickup - Edwin - Done
 scummy statue 2 room switches - Andrew - done
 Character Dark - Andrew - Done
+toggle Fix - Andrew - Done
