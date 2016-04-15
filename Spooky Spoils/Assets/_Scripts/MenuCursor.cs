@@ -25,6 +25,7 @@ public class MenuCursor : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Return))
         {
+            SoundManager.instance.PlaySFX(SoundManager.instance.sfxClips[0]);
             if (transform.position == playOffset)
                 Application.LoadLevel("Foyer1");
             if (transform.position == exitOffset)
@@ -34,11 +35,13 @@ public class MenuCursor : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.W))
         {
             this.transform.position =  playOffset;
+            SoundManager.instance.PlaySFX(SoundManager.instance.sfxClips[1]);
             
         }
         if(Input.GetKeyDown(KeyCode.S))
         {
             this.transform.position = exitOffset;
+            SoundManager.instance.PlaySFX(SoundManager.instance.sfxClips[1]);
         }
 
 	}
