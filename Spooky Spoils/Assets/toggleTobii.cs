@@ -4,10 +4,10 @@ using System.Collections;
 public class toggleTobii : MonoBehaviour {
     void Awake()
     {
-        toggle();
+        toggle(true);
     }
-    public void toggle()
+    public void toggle(bool activated)
     {
-        InputManager.tobiiOn = this.GetComponent<UnityEngine.UI.Toggle>().isOn;
+        InputManager.tobiiOn = activated;
     }
 }
