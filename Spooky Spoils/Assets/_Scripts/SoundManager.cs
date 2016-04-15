@@ -36,6 +36,12 @@ public class SoundManager : MonoBehaviour {
         Debug.Log(UnityEngine.SceneManagement.SceneManager.GetActiveScene().name);
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "BlockRoom")
             PlayBGMusic(bgClips[0]);
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "BossRoom2")
+            PlayBGMusic(bgClips[4]);
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "Foyer3")
+            PlayBGMusic(bgClips[3]);
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "StatueRoom1")
+            PlayBGMusic(bgClips[2]);
     }
 
     internal void PlaySFX(AudioClip clip)
