@@ -258,6 +258,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cdf9c33d9671f0644b08a75e8eb54bef, type: 3}
   - {fileID: 8300000, guid: 040ef5f2c45f4b245bb807f18e4eb976, type: 3}
   - {fileID: 8300000, guid: f236ff9c95ba33e4eb433f132ace7cdd, type: 3}
+  - {fileID: 8300000, guid: ed4baef617e0b04438f45dc03eaa7302, type: 3}
   currentBGClip: {fileID: 0}
   sfxSource: {fileID: 8287752}
   bgSource: {fileID: 8223340}

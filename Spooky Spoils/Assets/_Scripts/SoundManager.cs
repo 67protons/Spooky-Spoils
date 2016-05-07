@@ -42,6 +42,8 @@ public class SoundManager : MonoBehaviour {
             PlayBGMusic(bgClips[3]);
         if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "StatueRoom1")
             PlayBGMusic(bgClips[2]);
+        if (UnityEngine.SceneManagement.SceneManager.GetActiveScene().name == "MainMenu")
+            PlayBGMusic(bgClips[1]);
     }
 
     internal void PlaySFX(AudioClip clip)

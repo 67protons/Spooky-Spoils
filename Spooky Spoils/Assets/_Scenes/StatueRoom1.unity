@@ -342,6 +342,8 @@ GameObject:
   - 4: {fileID: 198511976}
   - 212: {fileID: 198511975}
   - 60: {fileID: 198511974}
+  - 82: {fileID: 198511977}
+  - 114: {fileID: 198511978}
   m_Layer: 0
   m_Name: Door (2)
   m_TagString: Untagged
@@ -409,6 +411,91 @@ Transform:
   m_Children: []
   m_Father: {fileID: 857703725}
   m_RootOrder: 2
+--- !u!82 &198511977
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 198511973}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 6715d582e314c474385726434f2b8d47, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+--- !u!114 &198511978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 198511973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b20142900deeb7b40be9db9d7159967c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &204302526
 Prefab:
   m_ObjectHideFlags: 0
@@ -448,25 +535,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 141888, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Name
-      value: StatueGhostTrigger (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 11460658, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
       propertyPath: owner
       value: 
       objectReference: {fileID: 431127858}
+    - target: {fileID: 11460658, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 198511977}
     - target: {fileID: 141888, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.y
-      value: 1
+      propertyPath: m_Name
+      value: StatueGhostTrigger (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
@@ -514,25 +593,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 141888, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Name
-      value: StatueGhostTrigger (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 11460658, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
       propertyPath: owner
       value: 
       objectReference: {fileID: 1860249835}
+    - target: {fileID: 11460658, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 198511977}
     - target: {fileID: 141888, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.y
-      value: 1
+      propertyPath: m_Name
+      value: StatueGhostTrigger (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
@@ -580,18 +651,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 118368, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 11436646, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
-      propertyPath: showProjectedBounds
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 21277660, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
-      propertyPath: m_SortingLayerID
-      value: 813234319
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
   m_IsPrefabParent: 0
@@ -599,23 +658,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 418146, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
   m_PrefabInternal: {fileID: 229515353}
---- !u!1 &229515355 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 118368, guid: 4d70724fd48d8354383338c5e945a350, type: 2}
-  m_PrefabInternal: {fileID: 229515353}
---- !u!114 &229515356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 229515355}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HasMouse: 0
-  projectedBounds: {x: 0, y: 0}
 --- !u!1001 &299426498
 Prefab:
   m_ObjectHideFlags: 0
@@ -736,14 +778,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 172142, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 21273538, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
-      propertyPath: m_SortingLayerID
-      value: 813234319
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
   m_IsPrefabParent: 0
@@ -751,23 +785,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 483680, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
   m_PrefabInternal: {fileID: 334508951}
---- !u!1 &334508953 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 172142, guid: b63cbf24225f2eb4893682cb28782bb7, type: 2}
-  m_PrefabInternal: {fileID: 334508951}
---- !u!114 &334508954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 334508953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HasMouse: 0
-  projectedBounds: {x: 0, y: 0}
 --- !u!1 &364688731 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 149154, guid: fc50aeda79a17cf47ad9dc112ed5b664, type: 2}
@@ -852,25 +869,17 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 141888, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Name
-      value: StatueGhostTrigger (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 11460658, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
       propertyPath: owner
       value: 
       objectReference: {fileID: 121071881}
+    - target: {fileID: 11460658, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 198511977}
     - target: {fileID: 141888, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.y
-      value: 1
+      propertyPath: m_Name
+      value: StatueGhostTrigger (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
@@ -1139,14 +1148,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 145682, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
-      propertyPath: m_TagString
-      value: Enemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 21250312, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
-      propertyPath: m_SortingLayerID
-      value: 813234319
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
   m_IsPrefabParent: 0
@@ -1154,23 +1155,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 473602, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
   m_PrefabInternal: {fileID: 993279861}
---- !u!1 &993279863 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 145682, guid: 66762ca5a0e1e3443ac67e03d42601da, type: 2}
-  m_PrefabInternal: {fileID: 993279861}
---- !u!114 &993279864
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 993279863}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HasMouse: 0
-  projectedBounds: {x: 0, y: 0}
 --- !u!1001 &1055483179
 Prefab:
   m_ObjectHideFlags: 0
@@ -1951,18 +1935,10 @@ Prefab:
       propertyPath: owner
       value: 
       objectReference: {fileID: 1608265805}
-    - target: {fileID: 141888, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_TagString
-      value: Untagged
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6152930, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
-      propertyPath: m_Size.y
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 11460658, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
+      propertyPath: audioSource
+      value: 
+      objectReference: {fileID: 198511977}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6f14ffa7c09629f4d9ca1370a16a96ca, type: 2}
   m_IsPrefabParent: 0
@@ -2009,10 +1985,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 8264750, guid: 6df6b4155a11ebb4bb7a99bbd62bd7c1, type: 2}
-      propertyPath: m_audioClip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6715d582e314c474385726434f2b8d47, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6df6b4155a11ebb4bb7a99bbd62bd7c1, type: 2}
   m_IsPrefabParent: 0

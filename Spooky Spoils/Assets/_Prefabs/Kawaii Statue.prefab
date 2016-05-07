@@ -13,9 +13,10 @@ GameObject:
   - 60: {fileID: 6049614}
   - 95: {fileID: 9554348}
   - 114: {fileID: 11436646}
+  - 114: {fileID: 11463024}
   m_Layer: 0
   m_Name: Kawaii Statue
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +28,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 118368}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9484615, y: -2.508253, z: 0}
+  m_LocalPosition: {x: 3.51, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -109,6 +110,19 @@ MonoBehaviour:
   maskType: 0
   showProjectedBounds: 0
   delayInMilliseconds: 0
+--- !u!114 &11463024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 118368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ec92a4e645f59b43893b45f8466cb0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HasMouse: 0
+  projectedBounds: {x: 0, y: 0}
 --- !u!114 &11493732
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -123,6 +137,7 @@ MonoBehaviour:
   speed: 1
   isChasing: 0
   activated: 0
+  anim: {fileID: 0}
 --- !u!212 &21277660
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -147,7 +162,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
+  m_SortingLayerID: 813234319
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: fbbede874a82a1c4e9151e09ae07901b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
